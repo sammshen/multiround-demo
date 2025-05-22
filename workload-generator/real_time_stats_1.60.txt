@@ -1,0 +1,3460 @@
+Real-time comparison statistics for QPS: 1.6
+Model: meta-llama/Llama-3.1-8B-Instruct
+Started at: 2025-05-22 12:43:13
+=======================================================
+Comparing Production Stack (localhost:30080) vs. Ray Serve (localhost:30081)
+Using real documentation from man pages as context
+Available documents: man-unix.txt, man-python.txt, man-sed.txt, man-grep.txt, man-bash.txt, man-ffmpeg.txt
+
+[2025-05-22 12:43:17] User 17, Request 1, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 4751
+  Generation tokens: 200
+  TTFT: 185.60 ms
+  TPOT: 6.95 ms
+  ITL: 7.84 ms
+  Total generation time: 1.57 s
+  Generation speed: 127.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:18] User 17, Request 1, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 4752
+  Generation tokens: 200
+  TTFT: 165.36 ms
+  TPOT: 14.57 ms
+  ITL: 15.32 ms
+  Total generation time: 3.06 s
+  Generation speed: 65.26 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:19] User 6, Request 15, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10448
+  Generation tokens: 200
+  TTFT: 392.65 ms
+  TPOT: 11.22 ms
+  ITL: 13.13 ms
+  Total generation time: 2.63 s
+  Generation speed: 76.15 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:19] User 10, Request 10, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10384
+  Generation tokens: 200
+  TTFT: 401.87 ms
+  TPOT: 9.51 ms
+  ITL: 11.47 ms
+  Total generation time: 2.29 s
+  Generation speed: 87.16 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:22] User 10, Request 10, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10385
+  Generation tokens: 200
+  TTFT: 369.81 ms
+  TPOT: 24.39 ms
+  ITL: 26.11 ms
+  Total generation time: 5.22 s
+  Generation speed: 38.29 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:22] User 6, Request 15, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10449
+  Generation tokens: 200
+  TTFT: 415.20 ms
+  TPOT: 27.50 ms
+  ITL: 29.44 ms
+  Total generation time: 5.89 s
+  Generation speed: 33.97 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:24] User 14, Request 5, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 21474
+  Generation tokens: 200
+  TTFT: 923.33 ms
+  TPOT: 23.22 ms
+  ITL: 27.72 ms
+  Total generation time: 5.54 s
+  Generation speed: 36.07 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:24] User 4, Request 18, Endpoint ProductionStack
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10114
+  Generation tokens: 200
+  TTFT: 647.51 ms
+  TPOT: 10.94 ms
+  ITL: 14.12 ms
+  Total generation time: 2.82 s
+  Generation speed: 70.82 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:24] User 15, Request 4, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 23325
+  Generation tokens: 200
+  TTFT: 1236.44 ms
+  TPOT: 8.04 ms
+  ITL: 14.19 ms
+  Total generation time: 2.84 s
+  Generation speed: 70.49 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:24] User 3, Request 19, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 21656
+  Generation tokens: 200
+  TTFT: 1174.32 ms
+  TPOT: 18.65 ms
+  ITL: 24.43 ms
+  Total generation time: 4.89 s
+  Generation speed: 40.94 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:24] User 7, Request 14, Endpoint RayServe
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 7207
+  Generation tokens: 200
+  TTFT: 621.66 ms
+  TPOT: 20.94 ms
+  ITL: 23.94 ms
+  Total generation time: 4.79 s
+  Generation speed: 41.77 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:25] User 9, Request 12, Endpoint ProductionStack
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 4991
+  Generation tokens: 200
+  TTFT: 165.31 ms
+  TPOT: 7.12 ms
+  ITL: 7.92 ms
+  Total generation time: 1.58 s
+  Generation speed: 126.34 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:25] User 11, Request 9, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 21360
+  Generation tokens: 200
+  TTFT: 922.57 ms
+  TPOT: 23.22 ms
+  ITL: 27.71 ms
+  Total generation time: 5.54 s
+  Generation speed: 36.08 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:26] User 15, Request 4, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 23326
+  Generation tokens: 200
+  TTFT: 1171.88 ms
+  TPOT: 18.65 ms
+  ITL: 24.41 ms
+  Total generation time: 4.88 s
+  Generation speed: 40.96 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:26] User 4, Request 18, Endpoint RayServe
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10115
+  Generation tokens: 200
+  TTFT: 926.03 ms
+  TPOT: 18.53 ms
+  ITL: 23.07 ms
+  Total generation time: 4.61 s
+  Generation speed: 43.35 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:26] User 8, Request 13, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28450
+  Generation tokens: 200
+  TTFT: 1391.74 ms
+  TPOT: 11.48 ms
+  ITL: 18.38 ms
+  Total generation time: 3.68 s
+  Generation speed: 54.40 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:27] User 9, Request 12, Endpoint RayServe
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 4992
+  Generation tokens: 200
+  TTFT: 215.72 ms
+  TPOT: 13.58 ms
+  ITL: 14.59 ms
+  Total generation time: 2.92 s
+  Generation speed: 68.52 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:27] User 3, Request 19, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 21655
+  Generation tokens: 200
+  TTFT: 1233.01 ms
+  TPOT: 33.10 ms
+  ITL: 39.10 ms
+  Total generation time: 7.82 s
+  Generation speed: 25.58 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:27] User 14, Request 5, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 21473
+  Generation tokens: 200
+  TTFT: 1612.78 ms
+  TPOT: 32.30 ms
+  ITL: 40.20 ms
+  Total generation time: 8.04 s
+  Generation speed: 24.87 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:27] User 7, Request 14, Endpoint ProductionStack
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 7206
+  Generation tokens: 200
+  TTFT: 545.39 ms
+  TPOT: 36.49 ms
+  ITL: 39.04 ms
+  Total generation time: 7.81 s
+  Generation speed: 25.62 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:27] User 11, Request 9, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 21359
+  Generation tokens: 200
+  TTFT: 839.38 ms
+  TPOT: 32.42 ms
+  ITL: 36.45 ms
+  Total generation time: 7.29 s
+  Generation speed: 27.43 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:28] User 6, Request 16, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10703
+  Generation tokens: 200
+  TTFT: 161.46 ms
+  TPOT: 10.96 ms
+  ITL: 11.71 ms
+  Total generation time: 2.34 s
+  Generation speed: 85.36 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:28] User 10, Request 11, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10645
+  Generation tokens: 200
+  TTFT: 128.78 ms
+  TPOT: 10.67 ms
+  ITL: 11.26 ms
+  Total generation time: 2.25 s
+  Generation speed: 88.80 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:28] User 12, Request 8, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 23622
+  Generation tokens: 200
+  TTFT: 1083.29 ms
+  TPOT: 23.40 ms
+  ITL: 28.70 ms
+  Total generation time: 5.74 s
+  Generation speed: 34.84 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:28] User 16, Request 3, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 17108
+  Generation tokens: 200
+  TTFT: 1072.49 ms
+  TPOT: 21.22 ms
+  ITL: 26.47 ms
+  Total generation time: 5.29 s
+  Generation speed: 37.78 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:29] User 5, Request 17, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5243
+  Generation tokens: 200
+  TTFT: 623.95 ms
+  TPOT: 22.97 ms
+  ITL: 25.97 ms
+  Total generation time: 5.19 s
+  Generation speed: 38.50 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:29] User 17, Request 2, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5008
+  Generation tokens: 200
+  TTFT: 215.75 ms
+  TPOT: 17.96 ms
+  ITL: 18.95 ms
+  Total generation time: 3.79 s
+  Generation speed: 52.77 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:29] User 13, Request 7, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 10326
+  Generation tokens: 200
+  TTFT: 419.57 ms
+  TPOT: 22.61 ms
+  ITL: 24.60 ms
+  Total generation time: 4.92 s
+  Generation speed: 40.65 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:30] User 16, Request 3, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 17107
+  Generation tokens: 200
+  TTFT: 1603.40 ms
+  TPOT: 23.61 ms
+  ITL: 31.51 ms
+  Total generation time: 6.30 s
+  Generation speed: 31.73 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:30] User 8, Request 13, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28449
+  Generation tokens: 200
+  TTFT: 2104.11 ms
+  TPOT: 24.64 ms
+  ITL: 35.04 ms
+  Total generation time: 7.01 s
+  Generation speed: 28.54 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:30] User 5, Request 17, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5242
+  Generation tokens: 200
+  TTFT: 1000.10 ms
+  TPOT: 26.66 ms
+  ITL: 31.53 ms
+  Total generation time: 6.31 s
+  Generation speed: 31.71 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:30] User 12, Request 8, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 23621
+  Generation tokens: 200
+  TTFT: 2188.09 ms
+  TPOT: 20.78 ms
+  ITL: 31.62 ms
+  Total generation time: 6.32 s
+  Generation speed: 31.63 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:30] User 13, Request 7, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 10325
+  Generation tokens: 200
+  TTFT: 328.19 ms
+  TPOT: 28.56 ms
+  ITL: 30.06 ms
+  Total generation time: 6.01 s
+  Generation speed: 33.27 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:30] User 6, Request 16, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10704
+  Generation tokens: 200
+  TTFT: 423.19 ms
+  TPOT: 21.12 ms
+  ITL: 23.13 ms
+  Total generation time: 4.63 s
+  Generation speed: 43.24 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:31] User 10, Request 11, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10646
+  Generation tokens: 200
+  TTFT: 416.16 ms
+  TPOT: 19.74 ms
+  ITL: 21.72 ms
+  Total generation time: 4.34 s
+  Generation speed: 46.04 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:31] User 17, Request 2, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5007
+  Generation tokens: 200
+  TTFT: 130.11 ms
+  TPOT: 30.13 ms
+  ITL: 30.63 ms
+  Total generation time: 6.13 s
+  Generation speed: 32.65 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:32] User 15, Request 5, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 23579
+  Generation tokens: 200
+  TTFT: 211.52 ms
+  TPOT: 12.46 ms
+  ITL: 13.45 ms
+  Total generation time: 2.69 s
+  Generation speed: 74.34 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:32] User 4, Request 19, Endpoint ProductionStack
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10368
+  Generation tokens: 200
+  TTFT: 128.36 ms
+  TPOT: 12.43 ms
+  ITL: 13.01 ms
+  Total generation time: 2.60 s
+  Generation speed: 76.85 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:33] User 3, Request 20, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 21911
+  Generation tokens: 200
+  TTFT: 1180.65 ms
+  TPOT: 18.24 ms
+  ITL: 24.05 ms
+  Total generation time: 4.81 s
+  Generation speed: 41.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:33] User 14, Request 6, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 21732
+  Generation tokens: 200
+  TTFT: 214.38 ms
+  TPOT: 30.60 ms
+  ITL: 31.52 ms
+  Total generation time: 6.30 s
+  Generation speed: 31.73 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:34] User 7, Request 15, Endpoint ProductionStack
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 7460
+  Generation tokens: 200
+  TTFT: 826.87 ms
+  TPOT: 20.66 ms
+  ITL: 24.69 ms
+  Total generation time: 4.94 s
+  Generation speed: 40.50 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:34] User 11, Request 10, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 21615
+  Generation tokens: 200
+  TTFT: 238.47 ms
+  TPOT: 23.57 ms
+  ITL: 24.64 ms
+  Total generation time: 4.93 s
+  Generation speed: 40.58 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:34] User 3, Request 20, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 21910
+  Generation tokens: 200
+  TTFT: 1339.02 ms
+  TPOT: 19.09 ms
+  ITL: 25.69 ms
+  Total generation time: 5.14 s
+  Generation speed: 38.93 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:34] User 18, Request 1, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 27912
+  Generation tokens: 200
+  TTFT: 1388.68 ms
+  TPOT: 18.54 ms
+  ITL: 25.40 ms
+  Total generation time: 5.08 s
+  Generation speed: 39.38 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:34] User 9, Request 13, Endpoint ProductionStack
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 5246
+  Generation tokens: 200
+  TTFT: 67.80 ms
+  TPOT: 7.52 ms
+  ITL: 7.83 ms
+  Total generation time: 1.57 s
+  Generation speed: 127.78 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:35] User 14, Request 6, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 21733
+  Generation tokens: 200
+  TTFT: 923.39 ms
+  TPOT: 32.20 ms
+  ITL: 36.66 ms
+  Total generation time: 7.33 s
+  Generation speed: 27.28 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:35] User 18, Request 1, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 27913
+  Generation tokens: 200
+  TTFT: 1770.14 ms
+  TPOT: 23.45 ms
+  ITL: 32.19 ms
+  Total generation time: 6.44 s
+  Generation speed: 31.07 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:35] User 8, Request 14, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28703
+  Generation tokens: 200
+  TTFT: 272.28 ms
+  TPOT: 22.67 ms
+  ITL: 23.92 ms
+  Total generation time: 4.78 s
+  Generation speed: 41.81 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:35] User 7, Request 15, Endpoint RayServe
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 7461
+  Generation tokens: 200
+  TTFT: 1324.19 ms
+  TPOT: 24.74 ms
+  ITL: 31.23 ms
+  Total generation time: 6.25 s
+  Generation speed: 32.02 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:36] User 11, Request 10, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 21616
+  Generation tokens: 200
+  TTFT: 1532.62 ms
+  TPOT: 20.58 ms
+  ITL: 28.14 ms
+  Total generation time: 5.63 s
+  Generation speed: 35.54 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:36] User 12, Request 9, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 23876
+  Generation tokens: 200
+  TTFT: 276.27 ms
+  TPOT: 21.66 ms
+  ITL: 22.94 ms
+  Total generation time: 4.59 s
+  Generation speed: 43.60 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:36] User 15, Request 5, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 23580
+  Generation tokens: 200
+  TTFT: 1938.59 ms
+  TPOT: 14.52 ms
+  ITL: 24.14 ms
+  Total generation time: 4.83 s
+  Generation speed: 41.42 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:36] User 4, Request 19, Endpoint RayServe
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10369
+  Generation tokens: 200
+  TTFT: 1686.90 ms
+  TPOT: 14.46 ms
+  ITL: 22.82 ms
+  Total generation time: 4.56 s
+  Generation speed: 43.82 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:36] User 16, Request 4, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 17362
+  Generation tokens: 200
+  TTFT: 184.17 ms
+  TPOT: 21.06 ms
+  ITL: 21.87 ms
+  Total generation time: 4.37 s
+  Generation speed: 45.72 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:36] User 8, Request 14, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28704
+  Generation tokens: 200
+  TTFT: 2108.93 ms
+  TPOT: 7.82 ms
+  ITL: 18.33 ms
+  Total generation time: 3.67 s
+  Generation speed: 54.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:36] User 5, Request 18, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5503
+  Generation tokens: 200
+  TTFT: 90.25 ms
+  TPOT: 20.90 ms
+  ITL: 21.24 ms
+  Total generation time: 4.25 s
+  Generation speed: 47.07 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:37] User 6, Request 17, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10959
+  Generation tokens: 200
+  TTFT: 122.31 ms
+  TPOT: 11.20 ms
+  ITL: 11.75 ms
+  Total generation time: 2.35 s
+  Generation speed: 85.09 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:38] User 13, Request 8, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 10581
+  Generation tokens: 200
+  TTFT: 121.98 ms
+  TPOT: 20.44 ms
+  ITL: 20.94 ms
+  Total generation time: 4.19 s
+  Generation speed: 47.74 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:38] User 10, Request 12, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10906
+  Generation tokens: 200
+  TTFT: 163.63 ms
+  TPOT: 10.48 ms
+  ITL: 11.25 ms
+  Total generation time: 2.25 s
+  Generation speed: 88.92 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:38] User 12, Request 9, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 23877
+  Generation tokens: 200
+  TTFT: 1020.38 ms
+  TPOT: 24.05 ms
+  ITL: 29.03 ms
+  Total generation time: 5.81 s
+  Generation speed: 34.44 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:38] User 16, Request 4, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 17363
+  Generation tokens: 200
+  TTFT: 1071.54 ms
+  TPOT: 21.34 ms
+  ITL: 26.59 ms
+  Total generation time: 5.32 s
+  Generation speed: 37.61 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:38] User 5, Request 18, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5504
+  Generation tokens: 200
+  TTFT: 573.23 ms
+  TPOT: 23.49 ms
+  ITL: 26.24 ms
+  Total generation time: 5.25 s
+  Generation speed: 38.11 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:38] User 9, Request 13, Endpoint RayServe
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 5247
+  Generation tokens: 200
+  TTFT: 217.02 ms
+  TPOT: 24.68 ms
+  ITL: 25.65 ms
+  Total generation time: 5.13 s
+  Generation speed: 38.99 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:38] User 17, Request 3, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5262
+  Generation tokens: 200
+  TTFT: 82.02 ms
+  TPOT: 21.03 ms
+  ITL: 21.33 ms
+  Total generation time: 4.27 s
+  Generation speed: 46.88 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:39] User 13, Request 8, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 10582
+  Generation tokens: 200
+  TTFT: 424.77 ms
+  TPOT: 22.27 ms
+  ITL: 24.28 ms
+  Total generation time: 4.86 s
+  Generation speed: 41.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:39] User 17, Request 3, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5263
+  Generation tokens: 200
+  TTFT: 228.59 ms
+  TPOT: 22.64 ms
+  ITL: 23.67 ms
+  Total generation time: 4.73 s
+  Generation speed: 42.24 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:40] User 6, Request 17, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10960
+  Generation tokens: 200
+  TTFT: 423.53 ms
+  TPOT: 20.12 ms
+  ITL: 22.14 ms
+  Total generation time: 4.43 s
+  Generation speed: 45.17 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:40] User 10, Request 12, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 10907
+  Generation tokens: 200
+  TTFT: 472.70 ms
+  TPOT: 18.13 ms
+  ITL: 20.41 ms
+  Total generation time: 4.08 s
+  Generation speed: 49.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:41] User 14, Request 7, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 21988
+  Generation tokens: 200
+  TTFT: 971.40 ms
+  TPOT: 11.68 ms
+  ITL: 16.47 ms
+  Total generation time: 3.29 s
+  Generation speed: 60.70 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:41] User 14, Request 7, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 21987
+  Generation tokens: 200
+  TTFT: 203.56 ms
+  TPOT: 23.59 ms
+  ITL: 24.49 ms
+  Total generation time: 4.90 s
+  Generation speed: 40.84 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:42] User 18, Request 2, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28166
+  Generation tokens: 200
+  TTFT: 290.08 ms
+  TPOT: 23.42 ms
+  ITL: 24.76 ms
+  Total generation time: 4.95 s
+  Generation speed: 40.40 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:42] User 7, Request 16, Endpoint ProductionStack
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 7718
+  Generation tokens: 200
+  TTFT: 153.31 ms
+  TPOT: 23.89 ms
+  ITL: 24.54 ms
+  Total generation time: 4.91 s
+  Generation speed: 40.75 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:42] User 15, Request 6, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 23836
+  Generation tokens: 200
+  TTFT: 256.15 ms
+  TPOT: 17.66 ms
+  ITL: 18.85 ms
+  Total generation time: 3.77 s
+  Generation speed: 53.04 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:43] User 11, Request 11, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 21873
+  Generation tokens: 200
+  TTFT: 220.15 ms
+  TPOT: 22.94 ms
+  ITL: 23.93 ms
+  Total generation time: 4.79 s
+  Generation speed: 41.80 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:43] User 19, Request 1, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 28570
+  Generation tokens: 200
+  TTFT: 1290.99 ms
+  TPOT: 6.37 ms
+  ITL: 12.79 ms
+  Total generation time: 2.56 s
+  Generation speed: 78.20 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:43] User 4, Request 20, Endpoint ProductionStack
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10621
+  Generation tokens: 200
+  TTFT: 1313.00 ms
+  TPOT: 6.18 ms
+  ITL: 12.71 ms
+  Total generation time: 2.54 s
+  Generation speed: 78.68 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:44] User 9, Request 14, Endpoint ProductionStack
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 5501
+  Generation tokens: 200
+  TTFT: 80.26 ms
+  TPOT: 8.64 ms
+  ITL: 8.99 ms
+  Total generation time: 1.80 s
+  Generation speed: 111.19 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:45] User 8, Request 15, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28957
+  Generation tokens: 200
+  TTFT: 295.89 ms
+  TPOT: 22.53 ms
+  ITL: 23.90 ms
+  Total generation time: 4.78 s
+  Generation speed: 41.84 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:45] User 12, Request 10, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 24131
+  Generation tokens: 200
+  TTFT: 233.49 ms
+  TPOT: 21.91 ms
+  ITL: 22.96 ms
+  Total generation time: 4.59 s
+  Generation speed: 43.55 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     44        
+Benchmark duration (s):                  30.01      
+Total input tokens:                      701139    
+Total generated tokens:                  8800      
+Request throughput (req/s):              1.47      
+Output token throughput (tok/s):         293.28    
+Total Token throughput (tok/s):          23660.31    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          567.48     
+Median TTFT (ms):                        264.21     
+P99 TTFT (ms):                           2151.98     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          18.99     
+Median TPOT (ms):                        20.84     
+P99 TPOT (ms):                           35.03     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           21.73     
+Median ITL (ms):                         22.95     
+P99 ITL (ms):                            39.73     
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     35        
+Benchmark duration (s):                  25.34      
+Total input tokens:                      521801    
+Total generated tokens:                  7000      
+Request throughput (req/s):              1.38      
+Output token throughput (tok/s):         276.28    
+Total Token throughput (tok/s):          20870.69    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          869.16     
+Median TTFT (ms):                        923.33     
+P99 TTFT (ms):                           2051.01     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          20.23     
+Median TPOT (ms):                        21.12     
+P99 TPOT (ms):                           30.60     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           24.48     
+Median ITL (ms):                         24.41     
+P99 ITL (ms):                            35.14     
+[2025-05-22 12:43:46] User 16, Request 5, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 17621
+  Generation tokens: 200
+  TTFT: 186.54 ms
+  TPOT: 21.02 ms
+  ITL: 21.85 ms
+  Total generation time: 4.37 s
+  Generation speed: 45.77 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:46] User 5, Request 19, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5758
+  Generation tokens: 200
+  TTFT: 92.88 ms
+  TPOT: 20.16 ms
+  ITL: 20.52 ms
+  Total generation time: 4.10 s
+  Generation speed: 48.72 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:46] User 9, Request 14, Endpoint RayServe
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 5502
+  Generation tokens: 200
+  TTFT: 216.67 ms
+  TPOT: 16.71 ms
+  ITL: 17.71 ms
+  Total generation time: 3.54 s
+  Generation speed: 56.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:47] User 13, Request 9, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 10837
+  Generation tokens: 200
+  TTFT: 128.03 ms
+  TPOT: 17.22 ms
+  ITL: 17.78 ms
+  Total generation time: 3.56 s
+  Generation speed: 56.26 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:47] User 6, Request 18, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11216
+  Generation tokens: 200
+  TTFT: 164.38 ms
+  TPOT: 10.73 ms
+  ITL: 11.50 ms
+  Total generation time: 2.30 s
+  Generation speed: 86.98 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:47] User 17, Request 4, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5517
+  Generation tokens: 200
+  TTFT: 99.11 ms
+  TPOT: 16.09 ms
+  ITL: 16.50 ms
+  Total generation time: 3.30 s
+  Generation speed: 60.60 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:47] User 13, Request 9, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 10838
+  Generation tokens: 200
+  TTFT: 419.53 ms
+  TPOT: 16.81 ms
+  ITL: 18.83 ms
+  Total generation time: 3.77 s
+  Generation speed: 53.11 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:47] User 10, Request 13, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11162
+  Generation tokens: 200
+  TTFT: 173.87 ms
+  TPOT: 10.26 ms
+  ITL: 11.07 ms
+  Total generation time: 2.21 s
+  Generation speed: 90.30 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:48] User 18, Request 2, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28167
+  Generation tokens: 200
+  TTFT: 1179.06 ms
+  TPOT: 43.86 ms
+  ITL: 49.53 ms
+  Total generation time: 9.91 s
+  Generation speed: 20.19 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:48] User 7, Request 16, Endpoint RayServe
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 7719
+  Generation tokens: 200
+  TTFT: 767.50 ms
+  TPOT: 44.88 ms
+  ITL: 48.49 ms
+  Total generation time: 9.70 s
+  Generation speed: 20.62 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:48] User 11, Request 11, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 21874
+  Generation tokens: 200
+  TTFT: 974.21 ms
+  TPOT: 40.84 ms
+  ITL: 45.50 ms
+  Total generation time: 9.10 s
+  Generation speed: 21.98 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:48] User 15, Request 6, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 23837
+  Generation tokens: 200
+  TTFT: 1286.57 ms
+  TPOT: 36.97 ms
+  ITL: 43.22 ms
+  Total generation time: 8.64 s
+  Generation speed: 23.14 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:49] User 14, Request 8, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 22243
+  Generation tokens: 200
+  TTFT: 250.26 ms
+  TPOT: 13.50 ms
+  ITL: 14.68 ms
+  Total generation time: 2.94 s
+  Generation speed: 68.12 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:49] User 4, Request 20, Endpoint RayServe
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10622
+  Generation tokens: 200
+  TTFT: 1142.70 ms
+  TPOT: 37.97 ms
+  ITL: 43.49 ms
+  Total generation time: 8.70 s
+  Generation speed: 22.99 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:49] User 19, Request 1, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 28571
+  Generation tokens: 200
+  TTFT: 2349.45 ms
+  TPOT: 27.55 ms
+  ITL: 39.16 ms
+  Total generation time: 7.83 s
+  Generation speed: 25.54 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:50] User 8, Request 15, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28958
+  Generation tokens: 200
+  TTFT: 2851.78 ms
+  TPOT: 20.34 ms
+  ITL: 34.50 ms
+  Total generation time: 6.90 s
+  Generation speed: 28.98 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:50] User 6, Request 18, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11217
+  Generation tokens: 200
+  TTFT: 416.52 ms
+  TPOT: 23.29 ms
+  ITL: 25.26 ms
+  Total generation time: 5.05 s
+  Generation speed: 39.59 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:50] User 12, Request 10, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 24132
+  Generation tokens: 200
+  TTFT: 3270.58 ms
+  TPOT: 14.24 ms
+  ITL: 30.53 ms
+  Total generation time: 6.11 s
+  Generation speed: 32.76 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:50] User 16, Request 5, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 17622
+  Generation tokens: 200
+  TTFT: 3296.08 ms
+  TPOT: 11.69 ms
+  ITL: 28.12 ms
+  Total generation time: 5.62 s
+  Generation speed: 35.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:50] User 5, Request 19, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5759
+  Generation tokens: 200
+  TTFT: 2899.24 ms
+  TPOT: 12.94 ms
+  ITL: 27.38 ms
+  Total generation time: 5.48 s
+  Generation speed: 36.53 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:50] User 17, Request 4, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5518
+  Generation tokens: 200
+  TTFT: 1148.22 ms
+  TPOT: 21.21 ms
+  ITL: 26.85 ms
+  Total generation time: 5.37 s
+  Generation speed: 37.25 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:51] User 14, Request 8, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 22244
+  Generation tokens: 200
+  TTFT: 1018.44 ms
+  TPOT: 17.06 ms
+  ITL: 22.07 ms
+  Total generation time: 4.41 s
+  Generation speed: 45.32 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:51] User 10, Request 13, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11163
+  Generation tokens: 200
+  TTFT: 486.62 ms
+  TPOT: 28.76 ms
+  ITL: 31.04 ms
+  Total generation time: 6.21 s
+  Generation speed: 32.21 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:52] User 15, Request 7, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 24090
+  Generation tokens: 200
+  TTFT: 216.18 ms
+  TPOT: 13.72 ms
+  ITL: 14.73 ms
+  Total generation time: 2.95 s
+  Generation speed: 67.87 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:53] User 19, Request 2, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 28825
+  Generation tokens: 200
+  TTFT: 282.33 ms
+  TPOT: 13.10 ms
+  ITL: 14.45 ms
+  Total generation time: 2.89 s
+  Generation speed: 69.21 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:53] User 11, Request 12, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 22135
+  Generation tokens: 200
+  TTFT: 992.71 ms
+  TPOT: 12.55 ms
+  ITL: 17.45 ms
+  Total generation time: 3.49 s
+  Generation speed: 57.31 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:53] User 18, Request 3, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28420
+  Generation tokens: 200
+  TTFT: 354.53 ms
+  TPOT: 20.79 ms
+  ITL: 22.46 ms
+  Total generation time: 4.49 s
+  Generation speed: 44.53 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:53] User 7, Request 17, Endpoint ProductionStack
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 7976
+  Generation tokens: 200
+  TTFT: 265.70 ms
+  TPOT: 21.18 ms
+  ITL: 22.40 ms
+  Total generation time: 4.48 s
+  Generation speed: 44.64 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:53] User 11, Request 12, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 22134
+  Generation tokens: 200
+  TTFT: 215.42 ms
+  TPOT: 20.77 ms
+  ITL: 21.74 ms
+  Total generation time: 4.35 s
+  Generation speed: 46.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:53] User 20, Request 1, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 5433
+  Generation tokens: 200
+  TTFT: 185.71 ms
+  TPOT: 9.75 ms
+  ITL: 10.63 ms
+  Total generation time: 2.13 s
+  Generation speed: 94.10 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:54] User 9, Request 15, Endpoint ProductionStack
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 5760
+  Generation tokens: 200
+  TTFT: 82.89 ms
+  TPOT: 8.95 ms
+  ITL: 9.32 ms
+  Total generation time: 1.86 s
+  Generation speed: 107.35 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:54] User 9, Request 15, Endpoint RayServe
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 5761
+  Generation tokens: 200
+  TTFT: 214.32 ms
+  TPOT: 8.05 ms
+  ITL: 9.08 ms
+  Total generation time: 1.82 s
+  Generation speed: 110.11 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:55] User 8, Request 16, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29214
+  Generation tokens: 200
+  TTFT: 258.94 ms
+  TPOT: 22.89 ms
+  ITL: 24.07 ms
+  Total generation time: 4.81 s
+  Generation speed: 41.55 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:55] User 12, Request 11, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 24392
+  Generation tokens: 200
+  TTFT: 232.86 ms
+  TPOT: 22.22 ms
+  ITL: 23.27 ms
+  Total generation time: 4.65 s
+  Generation speed: 42.97 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:55] User 16, Request 6, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 17876
+  Generation tokens: 200
+  TTFT: 230.80 ms
+  TPOT: 21.07 ms
+  ITL: 22.11 ms
+  Total generation time: 4.42 s
+  Generation speed: 45.22 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:56] User 5, Request 20, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6013
+  Generation tokens: 200
+  TTFT: 98.82 ms
+  TPOT: 21.47 ms
+  ITL: 21.85 ms
+  Total generation time: 4.37 s
+  Generation speed: 45.76 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:56] User 6, Request 19, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11471
+  Generation tokens: 200
+  TTFT: 164.80 ms
+  TPOT: 10.85 ms
+  ITL: 11.62 ms
+  Total generation time: 2.32 s
+  Generation speed: 86.08 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:56] User 13, Request 10, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 11096
+  Generation tokens: 200
+  TTFT: 131.53 ms
+  TPOT: 17.89 ms
+  ITL: 18.46 ms
+  Total generation time: 3.69 s
+  Generation speed: 54.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:56] User 17, Request 5, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5772
+  Generation tokens: 200
+  TTFT: 85.43 ms
+  TPOT: 16.86 ms
+  ITL: 17.20 ms
+  Total generation time: 3.44 s
+  Generation speed: 58.13 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:57] User 10, Request 14, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11417
+  Generation tokens: 200
+  TTFT: 127.89 ms
+  TPOT: 10.65 ms
+  ITL: 11.24 ms
+  Total generation time: 2.25 s
+  Generation speed: 89.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:58] User 14, Request 9, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 22498
+  Generation tokens: 200
+  TTFT: 210.56 ms
+  TPOT: 11.47 ms
+  ITL: 12.47 ms
+  Total generation time: 2.49 s
+  Generation speed: 80.19 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:59] User 10, Request 14, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11418
+  Generation tokens: 200
+  TTFT: 419.89 ms
+  TPOT: 17.75 ms
+  ITL: 19.76 ms
+  Total generation time: 3.95 s
+  Generation speed: 50.61 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:59] User 18, Request 3, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28421
+  Generation tokens: 200
+  TTFT: 1328.33 ms
+  TPOT: 43.31 ms
+  ITL: 49.73 ms
+  Total generation time: 9.95 s
+  Generation speed: 20.11 tokens/s
+---------------------------------------------------
+[2025-05-22 12:43:59] User 7, Request 17, Endpoint RayServe
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 7977
+  Generation tokens: 200
+  TTFT: 1479.43 ms
+  TPOT: 41.65 ms
+  ITL: 48.84 ms
+  Total generation time: 9.77 s
+  Generation speed: 20.48 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:00] User 14, Request 9, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 22499
+  Generation tokens: 200
+  TTFT: 926.78 ms
+  TPOT: 12.74 ms
+  ITL: 17.31 ms
+  Total generation time: 3.46 s
+  Generation speed: 57.77 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:00] User 15, Request 7, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 24091
+  Generation tokens: 200
+  TTFT: 1938.00 ms
+  TPOT: 38.61 ms
+  ITL: 48.11 ms
+  Total generation time: 9.62 s
+  Generation speed: 20.79 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:00] User 11, Request 13, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 22389
+  Generation tokens: 200
+  TTFT: 211.28 ms
+  TPOT: 11.43 ms
+  ITL: 12.43 ms
+  Total generation time: 2.49 s
+  Generation speed: 80.45 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:01] User 19, Request 2, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 28826
+  Generation tokens: 200
+  TTFT: 2248.22 ms
+  TPOT: 34.21 ms
+  ITL: 45.28 ms
+  Total generation time: 9.06 s
+  Generation speed: 22.08 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:01] User 8, Request 16, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29215
+  Generation tokens: 200
+  TTFT: 3314.09 ms
+  TPOT: 23.86 ms
+  ITL: 40.31 ms
+  Total generation time: 8.06 s
+  Generation speed: 24.81 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:01] User 12, Request 11, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 24393
+  Generation tokens: 200
+  TTFT: 4031.51 ms
+  TPOT: 16.31 ms
+  ITL: 36.39 ms
+  Total generation time: 7.28 s
+  Generation speed: 27.48 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:01] User 16, Request 6, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 17877
+  Generation tokens: 200
+  TTFT: 4097.71 ms
+  TPOT: 13.42 ms
+  ITL: 33.84 ms
+  Total generation time: 6.77 s
+  Generation speed: 29.55 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:01] User 20, Request 1, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 5434
+  Generation tokens: 200
+  TTFT: 3698.41 ms
+  TPOT: 14.67 ms
+  ITL: 33.09 ms
+  Total generation time: 6.62 s
+  Generation speed: 30.22 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:01] User 5, Request 20, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6014
+  Generation tokens: 200
+  TTFT: 3908.27 ms
+  TPOT: 12.86 ms
+  ITL: 32.34 ms
+  Total generation time: 6.47 s
+  Generation speed: 30.92 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:02] User 13, Request 10, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 11097
+  Generation tokens: 200
+  TTFT: 3018.15 ms
+  TPOT: 15.71 ms
+  ITL: 30.73 ms
+  Total generation time: 6.15 s
+  Generation speed: 32.54 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:02] User 17, Request 5, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 5773
+  Generation tokens: 200
+  TTFT: 2622.32 ms
+  TPOT: 16.94 ms
+  ITL: 29.96 ms
+  Total generation time: 5.99 s
+  Generation speed: 33.37 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:02] User 6, Request 19, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11472
+  Generation tokens: 200
+  TTFT: 2333.60 ms
+  TPOT: 16.83 ms
+  ITL: 28.41 ms
+  Total generation time: 5.68 s
+  Generation speed: 35.20 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:04] User 15, Request 8, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 24350
+  Generation tokens: 200
+  TTFT: 217.68 ms
+  TPOT: 19.26 ms
+  ITL: 20.25 ms
+  Total generation time: 4.05 s
+  Generation speed: 49.38 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:04] User 11, Request 13, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 22390
+  Generation tokens: 200
+  TTFT: 1062.78 ms
+  TPOT: 24.09 ms
+  ITL: 29.28 ms
+  Total generation time: 5.86 s
+  Generation speed: 34.15 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:04] User 18, Request 4, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28680
+  Generation tokens: 200
+  TTFT: 349.96 ms
+  TPOT: 23.40 ms
+  ITL: 25.03 ms
+  Total generation time: 5.01 s
+  Generation speed: 39.95 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:04] User 7, Request 18, Endpoint ProductionStack
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 8236
+  Generation tokens: 200
+  TTFT: 262.01 ms
+  TPOT: 23.79 ms
+  ITL: 24.98 ms
+  Total generation time: 5.00 s
+  Generation speed: 40.03 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:05] User 19, Request 3, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29084
+  Generation tokens: 200
+  TTFT: 266.35 ms
+  TPOT: 20.43 ms
+  ITL: 21.66 ms
+  Total generation time: 4.33 s
+  Generation speed: 46.17 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:05] User 18, Request 4, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28681
+  Generation tokens: 200
+  TTFT: 1396.94 ms
+  TPOT: 17.38 ms
+  ITL: 24.28 ms
+  Total generation time: 4.86 s
+  Generation speed: 41.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:06] User 9, Request 16, Endpoint ProductionStack
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 6015
+  Generation tokens: 200
+  TTFT: 111.65 ms
+  TPOT: 20.89 ms
+  ITL: 21.35 ms
+  Total generation time: 4.27 s
+  Generation speed: 46.85 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:06] User 20, Request 2, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 5688
+  Generation tokens: 200
+  TTFT: 97.45 ms
+  TPOT: 20.67 ms
+  ITL: 21.06 ms
+  Total generation time: 4.21 s
+  Generation speed: 47.49 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:07] User 6, Request 20, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11730
+  Generation tokens: 200
+  TTFT: 144.11 ms
+  TPOT: 15.94 ms
+  ITL: 16.58 ms
+  Total generation time: 3.32 s
+  Generation speed: 60.31 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:07] User 10, Request 15, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11672
+  Generation tokens: 200
+  TTFT: 149.77 ms
+  TPOT: 14.12 ms
+  ITL: 14.80 ms
+  Total generation time: 2.96 s
+  Generation speed: 67.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:07] User 12, Request 12, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 24653
+  Generation tokens: 200
+  TTFT: 251.42 ms
+  TPOT: 29.13 ms
+  ITL: 30.24 ms
+  Total generation time: 6.05 s
+  Generation speed: 33.07 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:07] User 8, Request 17, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29471
+  Generation tokens: 200
+  TTFT: 443.91 ms
+  TPOT: 28.23 ms
+  ITL: 30.30 ms
+  Total generation time: 6.06 s
+  Generation speed: 33.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:07] User 16, Request 7, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 18131
+  Generation tokens: 200
+  TTFT: 198.52 ms
+  TPOT: 28.76 ms
+  ITL: 29.61 ms
+  Total generation time: 5.92 s
+  Generation speed: 33.77 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:08] User 13, Request 11, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 11355
+  Generation tokens: 200
+  TTFT: 138.65 ms
+  TPOT: 28.61 ms
+  ITL: 29.16 ms
+  Total generation time: 5.83 s
+  Generation speed: 34.29 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:08] User 17, Request 6, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6029
+  Generation tokens: 200
+  TTFT: 272.41 ms
+  TPOT: 24.94 ms
+  ITL: 26.18 ms
+  Total generation time: 5.24 s
+  Generation speed: 38.20 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:08] User 17, Request 6, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6028
+  Generation tokens: 200
+  TTFT: 97.91 ms
+  TPOT: 29.71 ms
+  ITL: 30.05 ms
+  Total generation time: 6.01 s
+  Generation speed: 33.28 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:09] User 21, Request 1, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 27610
+  Generation tokens: 200
+  TTFT: 1283.57 ms
+  TPOT: 15.38 ms
+  ITL: 21.72 ms
+  Total generation time: 4.34 s
+  Generation speed: 46.03 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:09] User 7, Request 18, Endpoint RayServe
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 8237
+  Generation tokens: 200
+  TTFT: 318.68 ms
+  TPOT: 44.79 ms
+  ITL: 46.16 ms
+  Total generation time: 9.23 s
+  Generation speed: 21.67 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:09] User 6, Request 20, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11731
+  Generation tokens: 200
+  TTFT: 1540.44 ms
+  TPOT: 14.32 ms
+  ITL: 21.95 ms
+  Total generation time: 4.39 s
+  Generation speed: 45.55 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:09] User 21, Request 1, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 27609
+  Generation tokens: 200
+  TTFT: 1194.94 ms
+  TPOT: 19.46 ms
+  ITL: 25.34 ms
+  Total generation time: 5.07 s
+  Generation speed: 39.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:10] User 14, Request 10, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 22759
+  Generation tokens: 200
+  TTFT: 222.52 ms
+  TPOT: 23.56 ms
+  ITL: 24.56 ms
+  Total generation time: 4.91 s
+  Generation speed: 40.72 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:10] User 15, Request 8, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 24351
+  Generation tokens: 200
+  TTFT: 1079.41 ms
+  TPOT: 37.75 ms
+  ITL: 42.96 ms
+  Total generation time: 8.59 s
+  Generation speed: 23.28 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:10] User 19, Request 3, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29085
+  Generation tokens: 200
+  TTFT: 1784.44 ms
+  TPOT: 29.09 ms
+  ITL: 37.87 ms
+  Total generation time: 7.57 s
+  Generation speed: 26.41 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:10] User 8, Request 17, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29472
+  Generation tokens: 200
+  TTFT: 2648.17 ms
+  TPOT: 20.23 ms
+  ITL: 33.37 ms
+  Total generation time: 6.67 s
+  Generation speed: 29.97 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:10] User 9, Request 16, Endpoint RayServe
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 6016
+  Generation tokens: 200
+  TTFT: 2704.33 ms
+  TPOT: 18.95 ms
+  ITL: 32.37 ms
+  Total generation time: 6.47 s
+  Generation speed: 30.89 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:11] User 12, Request 12, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 24654
+  Generation tokens: 200
+  TTFT: 3659.53 ms
+  TPOT: 10.40 ms
+  ITL: 28.64 ms
+  Total generation time: 5.73 s
+  Generation speed: 34.91 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:11] User 20, Request 2, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 5689
+  Generation tokens: 200
+  TTFT: 3665.59 ms
+  TPOT: 9.78 ms
+  ITL: 28.06 ms
+  Total generation time: 5.61 s
+  Generation speed: 35.64 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:11] User 16, Request 7, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 18132
+  Generation tokens: 200
+  TTFT: 4331.72 ms
+  TPOT: 4.92 ms
+  ITL: 26.55 ms
+  Total generation time: 5.31 s
+  Generation speed: 37.66 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:11] User 13, Request 11, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 11356
+  Generation tokens: 200
+  TTFT: 4282.54 ms
+  TPOT: 5.39 ms
+  ITL: 26.77 ms
+  Total generation time: 5.35 s
+  Generation speed: 37.35 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:12] User 11, Request 14, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 22644
+  Generation tokens: 200
+  TTFT: 226.97 ms
+  TPOT: 22.20 ms
+  ITL: 23.22 ms
+  Total generation time: 4.64 s
+  Generation speed: 43.06 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:12] User 10, Request 15, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11673
+  Generation tokens: 200
+  TTFT: 2807.56 ms
+  TPOT: 13.14 ms
+  ITL: 27.11 ms
+  Total generation time: 5.42 s
+  Generation speed: 36.89 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:12] User 14, Request 10, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 22760
+  Generation tokens: 200
+  TTFT: 2812.52 ms
+  TPOT: 10.87 ms
+  ITL: 24.88 ms
+  Total generation time: 4.98 s
+  Generation speed: 40.19 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:13] User 18, Request 5, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28940
+  Generation tokens: 200
+  TTFT: 272.70 ms
+  TPOT: 21.50 ms
+  ITL: 22.76 ms
+  Total generation time: 4.55 s
+  Generation speed: 43.94 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:13] User 7, Request 19, Endpoint ProductionStack
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 8496
+  Generation tokens: 200
+  TTFT: 122.94 ms
+  TPOT: 21.94 ms
+  ITL: 22.44 ms
+  Total generation time: 4.49 s
+  Generation speed: 44.56 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:14] User 15, Request 9, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 24610
+  Generation tokens: 200
+  TTFT: 225.51 ms
+  TPOT: 20.43 ms
+  ITL: 21.46 ms
+  Total generation time: 4.29 s
+  Generation speed: 46.60 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:15] User 19, Request 4, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29340
+  Generation tokens: 200
+  TTFT: 259.82 ms
+  TPOT: 20.12 ms
+  ITL: 21.32 ms
+  Total generation time: 4.26 s
+  Generation speed: 46.91 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:15] User 9, Request 17, Endpoint ProductionStack
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 6270
+  Generation tokens: 200
+  TTFT: 151.16 ms
+  TPOT: 20.02 ms
+  ITL: 20.67 ms
+  Total generation time: 4.13 s
+  Generation speed: 48.38 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:15] User 20, Request 3, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 5943
+  Generation tokens: 200
+  TTFT: 132.37 ms
+  TPOT: 19.81 ms
+  ITL: 20.37 ms
+  Total generation time: 4.07 s
+  Generation speed: 49.09 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     46        
+Benchmark duration (s):                  29.59      
+Total input tokens:                      760834    
+Total generated tokens:                  9200      
+Request throughput (req/s):              1.55      
+Output token throughput (tok/s):         310.93    
+Total Token throughput (tok/s):          26024.89    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          217.15     
+Median TTFT (ms):                        204.54     
+P99 TTFT (ms):                           856.98     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          19.04     
+Median TPOT (ms):                        20.30     
+P99 TPOT (ms):                           29.45     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           20.03     
+Median ITL (ms):                         21.33     
+P99 ITL (ms):                            30.27     
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     48        
+Benchmark duration (s):                  26.96      
+Total input tokens:                      814012    
+Total generated tokens:                  9600      
+Request throughput (req/s):              1.78      
+Output token throughput (tok/s):         356.15    
+Total Token throughput (tok/s):          30554.83    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          1998.87     
+Median TTFT (ms):                        1662.44     
+P99 TTFT (ms):                           4308.60     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          22.00     
+Median TPOT (ms):                        17.22     
+P99 TPOT (ms):                           44.84     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           31.88     
+Median ITL (ms):                         30.24     
+P99 ITL (ms):                            49.64     
+[2025-05-22 12:44:16] User 10, Request 16, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11933
+  Generation tokens: 200
+  TTFT: 155.43 ms
+  TPOT: 13.41 ms
+  ITL: 14.12 ms
+  Total generation time: 2.82 s
+  Generation speed: 70.83 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:16] User 8, Request 18, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29726
+  Generation tokens: 200
+  TTFT: 308.19 ms
+  TPOT: 25.93 ms
+  ITL: 27.34 ms
+  Total generation time: 5.47 s
+  Generation speed: 36.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:16] User 12, Request 13, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 24908
+  Generation tokens: 200
+  TTFT: 242.19 ms
+  TPOT: 25.48 ms
+  ITL: 26.56 ms
+  Total generation time: 5.31 s
+  Generation speed: 37.65 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:16] User 16, Request 8, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 18390
+  Generation tokens: 200
+  TTFT: 192.34 ms
+  TPOT: 25.07 ms
+  ITL: 25.90 ms
+  Total generation time: 5.18 s
+  Generation speed: 38.61 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:17] User 13, Request 12, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 11610
+  Generation tokens: 200
+  TTFT: 140.10 ms
+  TPOT: 24.87 ms
+  ITL: 25.45 ms
+  Total generation time: 5.09 s
+  Generation speed: 39.29 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:17] User 12, Request 13, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 24909
+  Generation tokens: 200
+  TTFT: 1184.85 ms
+  TPOT: 18.79 ms
+  ITL: 24.62 ms
+  Total generation time: 4.92 s
+  Generation speed: 40.62 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:17] User 20, Request 3, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 5944
+  Generation tokens: 200
+  TTFT: 1176.59 ms
+  TPOT: 18.39 ms
+  ITL: 24.18 ms
+  Total generation time: 4.84 s
+  Generation speed: 41.36 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:17] User 13, Request 12, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 11611
+  Generation tokens: 200
+  TTFT: 823.13 ms
+  TPOT: 18.83 ms
+  ITL: 22.85 ms
+  Total generation time: 4.57 s
+  Generation speed: 43.76 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:17] User 17, Request 7, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6287
+  Generation tokens: 200
+  TTFT: 91.94 ms
+  TPOT: 24.79 ms
+  ITL: 25.13 ms
+  Total generation time: 5.03 s
+  Generation speed: 39.79 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:17] User 21, Request 2, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 27869
+  Generation tokens: 200
+  TTFT: 260.38 ms
+  TPOT: 21.76 ms
+  ITL: 22.95 ms
+  Total generation time: 4.59 s
+  Generation speed: 43.56 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:17] User 21, Request 2, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 27870
+  Generation tokens: 200
+  TTFT: 1235.68 ms
+  TPOT: 12.16 ms
+  ITL: 18.28 ms
+  Total generation time: 3.66 s
+  Generation speed: 54.72 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:18] User 11, Request 14, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 22645
+  Generation tokens: 200
+  TTFT: 988.19 ms
+  TPOT: 44.23 ms
+  ITL: 48.95 ms
+  Total generation time: 9.79 s
+  Generation speed: 20.43 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:18] User 14, Request 11, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 23014
+  Generation tokens: 200
+  TTFT: 223.37 ms
+  TPOT: 18.91 ms
+  ITL: 19.93 ms
+  Total generation time: 3.99 s
+  Generation speed: 50.17 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:19] User 22, Request 1, Endpoint ProductionStack
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10071
+  Generation tokens: 200
+  TTFT: 366.71 ms
+  TPOT: 15.16 ms
+  ITL: 16.91 ms
+  Total generation time: 3.38 s
+  Generation speed: 59.12 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:19] User 18, Request 5, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28941
+  Generation tokens: 200
+  TTFT: 1380.57 ms
+  TPOT: 37.86 ms
+  ITL: 44.57 ms
+  Total generation time: 8.91 s
+  Generation speed: 22.44 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:19] User 7, Request 19, Endpoint RayServe
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 8497
+  Generation tokens: 200
+  TTFT: 1324.56 ms
+  TPOT: 37.33 ms
+  ITL: 43.77 ms
+  Total generation time: 8.75 s
+  Generation speed: 22.85 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:19] User 15, Request 9, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 24611
+  Generation tokens: 200
+  TTFT: 1425.99 ms
+  TPOT: 32.42 ms
+  ITL: 39.39 ms
+  Total generation time: 7.88 s
+  Generation speed: 25.39 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:19] User 19, Request 4, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29341
+  Generation tokens: 200
+  TTFT: 2390.39 ms
+  TPOT: 22.56 ms
+  ITL: 34.40 ms
+  Total generation time: 6.88 s
+  Generation speed: 29.07 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:20] User 8, Request 18, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29727
+  Generation tokens: 200
+  TTFT: 3405.41 ms
+  TPOT: 12.27 ms
+  ITL: 29.23 ms
+  Total generation time: 5.85 s
+  Generation speed: 34.21 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:20] User 9, Request 17, Endpoint RayServe
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 6271
+  Generation tokens: 200
+  TTFT: 3405.51 ms
+  TPOT: 11.54 ms
+  ITL: 28.51 ms
+  Total generation time: 5.70 s
+  Generation speed: 35.08 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:20] User 16, Request 8, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 18391
+  Generation tokens: 200
+  TTFT: 3607.58 ms
+  TPOT: 7.76 ms
+  ITL: 25.76 ms
+  Total generation time: 5.15 s
+  Generation speed: 38.83 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:20] User 17, Request 7, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6288
+  Generation tokens: 200
+  TTFT: 3107.77 ms
+  TPOT: 9.52 ms
+  ITL: 25.01 ms
+  Total generation time: 5.00 s
+  Generation speed: 39.98 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:20] User 10, Request 16, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 11934
+  Generation tokens: 200
+  TTFT: 2262.58 ms
+  TPOT: 11.98 ms
+  ITL: 23.23 ms
+  Total generation time: 4.65 s
+  Generation speed: 43.05 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:20] User 14, Request 11, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 23015
+  Generation tokens: 200
+  TTFT: 2283.32 ms
+  TPOT: 9.58 ms
+  ITL: 20.95 ms
+  Total generation time: 4.19 s
+  Generation speed: 47.74 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:21] User 22, Request 1, Endpoint RayServe
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10072
+  Generation tokens: 200
+  TTFT: 419.24 ms
+  TPOT: 26.15 ms
+  ITL: 28.11 ms
+  Total generation time: 5.62 s
+  Generation speed: 35.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:22] User 11, Request 15, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 22905
+  Generation tokens: 200
+  TTFT: 215.99 ms
+  TPOT: 17.88 ms
+  ITL: 18.87 ms
+  Total generation time: 3.77 s
+  Generation speed: 53.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:24] User 18, Request 6, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29194
+  Generation tokens: 200
+  TTFT: 312.73 ms
+  TPOT: 22.01 ms
+  ITL: 23.46 ms
+  Total generation time: 4.69 s
+  Generation speed: 42.62 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:24] User 7, Request 20, Endpoint ProductionStack
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 8754
+  Generation tokens: 200
+  TTFT: 224.24 ms
+  TPOT: 22.40 ms
+  ITL: 23.41 ms
+  Total generation time: 4.68 s
+  Generation speed: 42.72 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:24] User 15, Request 10, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 24865
+  Generation tokens: 195
+  TTFT: 224.23 ms
+  TPOT: 22.40 ms
+  ITL: 23.44 ms
+  Total generation time: 4.57 s
+  Generation speed: 42.67 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:24] User 19, Request 5, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29595
+  Generation tokens: 200
+  TTFT: 516.31 ms
+  TPOT: 19.59 ms
+  ITL: 22.07 ms
+  Total generation time: 4.41 s
+  Generation speed: 45.31 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:25] User 9, Request 18, Endpoint ProductionStack
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 6526
+  Generation tokens: 200
+  TTFT: 153.93 ms
+  TPOT: 21.09 ms
+  ITL: 21.76 ms
+  Total generation time: 4.35 s
+  Generation speed: 45.96 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:25] User 20, Request 4, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 6198
+  Generation tokens: 200
+  TTFT: 125.30 ms
+  TPOT: 20.94 ms
+  ITL: 21.47 ms
+  Total generation time: 4.29 s
+  Generation speed: 46.59 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:25] User 12, Request 14, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 25169
+  Generation tokens: 200
+  TTFT: 257.77 ms
+  TPOT: 24.41 ms
+  ITL: 25.57 ms
+  Total generation time: 5.11 s
+  Generation speed: 39.10 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:25] User 8, Request 19, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29986
+  Generation tokens: 200
+  TTFT: 451.49 ms
+  TPOT: 23.50 ms
+  ITL: 25.64 ms
+  Total generation time: 5.13 s
+  Generation speed: 39.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:26] User 16, Request 9, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 18646
+  Generation tokens: 200
+  TTFT: 192.12 ms
+  TPOT: 24.07 ms
+  ITL: 24.91 ms
+  Total generation time: 4.98 s
+  Generation speed: 40.14 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:26] User 10, Request 17, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 12189
+  Generation tokens: 200
+  TTFT: 144.11 ms
+  TPOT: 14.58 ms
+  ITL: 15.22 ms
+  Total generation time: 3.04 s
+  Generation speed: 65.69 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:26] User 13, Request 13, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 11865
+  Generation tokens: 200
+  TTFT: 185.65 ms
+  TPOT: 23.65 ms
+  ITL: 24.46 ms
+  Total generation time: 4.89 s
+  Generation speed: 40.88 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:26] User 17, Request 8, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6548
+  Generation tokens: 200
+  TTFT: 117.37 ms
+  TPOT: 23.66 ms
+  ITL: 24.13 ms
+  Total generation time: 4.83 s
+  Generation speed: 41.44 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:27] User 21, Request 3, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28123
+  Generation tokens: 200
+  TTFT: 273.30 ms
+  TPOT: 20.68 ms
+  ITL: 21.95 ms
+  Total generation time: 4.39 s
+  Generation speed: 45.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:27] User 9, Request 18, Endpoint RayServe
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 6527
+  Generation tokens: 200
+  TTFT: 326.52 ms
+  TPOT: 29.75 ms
+  ITL: 31.24 ms
+  Total generation time: 6.25 s
+  Generation speed: 32.01 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:27] User 20, Request 4, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 6199
+  Generation tokens: 200
+  TTFT: 264.47 ms
+  TPOT: 29.69 ms
+  ITL: 30.86 ms
+  Total generation time: 6.17 s
+  Generation speed: 32.40 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:27] User 16, Request 9, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 18647
+  Generation tokens: 200
+  TTFT: 770.57 ms
+  TPOT: 26.38 ms
+  ITL: 30.10 ms
+  Total generation time: 6.02 s
+  Generation speed: 33.22 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:27] User 17, Request 8, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6549
+  Generation tokens: 200
+  TTFT: 270.00 ms
+  TPOT: 28.25 ms
+  ITL: 29.45 ms
+  Total generation time: 5.89 s
+  Generation speed: 33.95 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:28] User 14, Request 12, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 23270
+  Generation tokens: 200
+  TTFT: 229.59 ms
+  TPOT: 18.37 ms
+  ITL: 19.43 ms
+  Total generation time: 3.89 s
+  Generation speed: 51.48 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:28] User 11, Request 15, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 22906
+  Generation tokens: 200
+  TTFT: 925.60 ms
+  TPOT: 41.61 ms
+  ITL: 46.03 ms
+  Total generation time: 9.21 s
+  Generation speed: 21.72 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:28] User 22, Request 2, Endpoint ProductionStack
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10325
+  Generation tokens: 200
+  TTFT: 121.07 ms
+  TPOT: 16.69 ms
+  ITL: 17.21 ms
+  Total generation time: 3.44 s
+  Generation speed: 58.10 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:28] User 21, Request 3, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28124
+  Generation tokens: 200
+  TTFT: 1324.14 ms
+  TPOT: 18.90 ms
+  ITL: 25.43 ms
+  Total generation time: 5.09 s
+  Generation speed: 39.33 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:28] User 18, Request 6, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29195
+  Generation tokens: 200
+  TTFT: 1427.83 ms
+  TPOT: 33.85 ms
+  ITL: 40.82 ms
+  Total generation time: 8.16 s
+  Generation speed: 24.50 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:29] User 7, Request 20, Endpoint RayServe
+  Documents: man-sed.txt and man-python.txt
+  Prompt tokens: 8755
+  Generation tokens: 200
+  TTFT: 1626.90 ms
+  TPOT: 31.73 ms
+  ITL: 39.71 ms
+  Total generation time: 7.94 s
+  Generation speed: 25.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:29] User 15, Request 10, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 24866
+  Generation tokens: 200
+  TTFT: 2283.83 ms
+  TPOT: 24.75 ms
+  ITL: 36.04 ms
+  Total generation time: 7.21 s
+  Generation speed: 27.75 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:29] User 10, Request 17, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 12190
+  Generation tokens: 200
+  TTFT: 1022.22 ms
+  TPOT: 21.04 ms
+  ITL: 26.04 ms
+  Total generation time: 5.21 s
+  Generation speed: 38.40 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:29] User 19, Request 5, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29596
+  Generation tokens: 200
+  TTFT: 3253.31 ms
+  TPOT: 14.84 ms
+  ITL: 31.04 ms
+  Total generation time: 6.21 s
+  Generation speed: 32.22 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:29] User 8, Request 19, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29987
+  Generation tokens: 200
+  TTFT: 4193.51 ms
+  TPOT: 5.13 ms
+  ITL: 26.07 ms
+  Total generation time: 5.21 s
+  Generation speed: 38.35 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:29] User 12, Request 14, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 25170
+  Generation tokens: 200
+  TTFT: 5064.83 ms
+  TPOT: -3.54 ms
+  ITL: 21.80 ms
+  Total generation time: 4.36 s
+  Generation speed: 45.88 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:30] User 13, Request 13, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 11866
+  Generation tokens: 200
+  TTFT: 4642.97 ms
+  TPOT: -3.33 ms
+  ITL: 19.90 ms
+  Total generation time: 3.98 s
+  Generation speed: 50.25 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:30] User 22, Request 2, Endpoint RayServe
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10326
+  Generation tokens: 200
+  TTFT: 1553.11 ms
+  TPOT: 11.00 ms
+  ITL: 18.71 ms
+  Total generation time: 3.74 s
+  Generation speed: 53.45 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:30] User 14, Request 12, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 23271
+  Generation tokens: 200
+  TTFT: 1076.91 ms
+  TPOT: 21.77 ms
+  ITL: 27.05 ms
+  Total generation time: 5.41 s
+  Generation speed: 36.97 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:31] User 23, Request 1, Endpoint ProductionStack
+  Documents: man-sed.txt and man-unix.txt
+  Prompt tokens: 10098
+  Generation tokens: 200
+  TTFT: 326.26 ms
+  TPOT: 17.15 ms
+  ITL: 18.69 ms
+  Total generation time: 3.74 s
+  Generation speed: 53.49 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:33] User 11, Request 16, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 23160
+  Generation tokens: 200
+  TTFT: 224.35 ms
+  TPOT: 22.24 ms
+  ITL: 23.25 ms
+  Total generation time: 4.65 s
+  Generation speed: 43.01 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:33] User 15, Request 11, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 25116
+  Generation tokens: 200
+  TTFT: 224.69 ms
+  TPOT: 20.79 ms
+  ITL: 21.81 ms
+  Total generation time: 4.36 s
+  Generation speed: 45.84 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:34] User 19, Request 6, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29854
+  Generation tokens: 200
+  TTFT: 273.06 ms
+  TPOT: 20.46 ms
+  ITL: 21.72 ms
+  Total generation time: 4.34 s
+  Generation speed: 46.04 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:34] User 18, Request 7, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29448
+  Generation tokens: 200
+  TTFT: 318.94 ms
+  TPOT: 23.06 ms
+  ITL: 24.54 ms
+  Total generation time: 4.91 s
+  Generation speed: 40.75 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:34] User 9, Request 19, Endpoint ProductionStack
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 6781
+  Generation tokens: 200
+  TTFT: 105.55 ms
+  TPOT: 20.85 ms
+  ITL: 21.27 ms
+  Total generation time: 4.25 s
+  Generation speed: 47.01 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:34] User 20, Request 5, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 6454
+  Generation tokens: 200
+  TTFT: 130.82 ms
+  TPOT: 20.40 ms
+  ITL: 20.95 ms
+  Total generation time: 4.19 s
+  Generation speed: 47.73 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:34] User 20, Request 5, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 6455
+  Generation tokens: 200
+  TTFT: 215.38 ms
+  TPOT: 21.24 ms
+  ITL: 22.21 ms
+  Total generation time: 4.44 s
+  Generation speed: 45.02 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:35] User 8, Request 20, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 30243
+  Generation tokens: 200
+  TTFT: 273.81 ms
+  TPOT: 25.28 ms
+  ITL: 26.52 ms
+  Total generation time: 5.30 s
+  Generation speed: 37.71 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:35] User 12, Request 15, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 25425
+  Generation tokens: 200
+  TTFT: 276.95 ms
+  TPOT: 24.46 ms
+  ITL: 25.72 ms
+  Total generation time: 5.14 s
+  Generation speed: 38.88 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:35] User 10, Request 18, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 12445
+  Generation tokens: 200
+  TTFT: 152.50 ms
+  TPOT: 14.00 ms
+  ITL: 14.69 ms
+  Total generation time: 2.94 s
+  Generation speed: 68.08 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:35] User 16, Request 10, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 18907
+  Generation tokens: 200
+  TTFT: 241.21 ms
+  TPOT: 23.99 ms
+  ITL: 25.07 ms
+  Total generation time: 5.01 s
+  Generation speed: 39.88 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:35] User 13, Request 14, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 12121
+  Generation tokens: 200
+  TTFT: 193.88 ms
+  TPOT: 23.74 ms
+  ITL: 24.59 ms
+  Total generation time: 4.92 s
+  Generation speed: 40.66 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:36] User 13, Request 14, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 12122
+  Generation tokens: 200
+  TTFT: 470.98 ms
+  TPOT: 21.27 ms
+  ITL: 23.52 ms
+  Total generation time: 4.70 s
+  Generation speed: 42.51 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:36] User 17, Request 9, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6804
+  Generation tokens: 200
+  TTFT: 374.24 ms
+  TPOT: 21.08 ms
+  ITL: 22.85 ms
+  Total generation time: 4.57 s
+  Generation speed: 43.76 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:36] User 17, Request 9, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 6803
+  Generation tokens: 200
+  TTFT: 150.52 ms
+  TPOT: 23.63 ms
+  ITL: 24.26 ms
+  Total generation time: 4.85 s
+  Generation speed: 41.21 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:36] User 21, Request 4, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28380
+  Generation tokens: 200
+  TTFT: 261.51 ms
+  TPOT: 21.00 ms
+  ITL: 22.20 ms
+  Total generation time: 4.44 s
+  Generation speed: 45.04 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:37] User 10, Request 18, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 12446
+  Generation tokens: 200
+  TTFT: 471.80 ms
+  TPOT: 19.26 ms
+  ITL: 21.52 ms
+  Total generation time: 4.30 s
+  Generation speed: 46.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:37] User 14, Request 13, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 23526
+  Generation tokens: 200
+  TTFT: 233.19 ms
+  TPOT: 17.53 ms
+  ITL: 18.61 ms
+  Total generation time: 3.72 s
+  Generation speed: 53.73 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:37] User 22, Request 3, Endpoint ProductionStack
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10578
+  Generation tokens: 200
+  TTFT: 131.34 ms
+  TPOT: 15.70 ms
+  ITL: 16.28 ms
+  Total generation time: 3.26 s
+  Generation speed: 61.43 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:37] User 14, Request 13, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 23527
+  Generation tokens: 200
+  TTFT: 1031.62 ms
+  TPOT: 12.51 ms
+  ITL: 17.61 ms
+  Total generation time: 3.52 s
+  Generation speed: 56.80 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:38] User 22, Request 3, Endpoint RayServe
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10579
+  Generation tokens: 200
+  TTFT: 471.92 ms
+  TPOT: 14.09 ms
+  ITL: 16.38 ms
+  Total generation time: 3.28 s
+  Generation speed: 61.05 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:39] User 23, Request 1, Endpoint RayServe
+  Documents: man-sed.txt and man-unix.txt
+  Prompt tokens: 10099
+  Generation tokens: 200
+  TTFT: 428.69 ms
+  TPOT: 54.55 ms
+  ITL: 56.42 ms
+  Total generation time: 11.28 s
+  Generation speed: 17.72 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:40] User 11, Request 16, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 23161
+  Generation tokens: 200
+  TTFT: 1130.99 ms
+  TPOT: 47.43 ms
+  ITL: 52.85 ms
+  Total generation time: 10.57 s
+  Generation speed: 18.92 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:40] User 18, Request 7, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29449
+  Generation tokens: 200
+  TTFT: 2035.39 ms
+  TPOT: 37.24 ms
+  ITL: 47.24 ms
+  Total generation time: 9.45 s
+  Generation speed: 21.17 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:40] User 15, Request 11, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 25117
+  Generation tokens: 200
+  TTFT: 2840.96 ms
+  TPOT: 28.90 ms
+  ITL: 42.96 ms
+  Total generation time: 8.59 s
+  Generation speed: 23.28 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:40] User 19, Request 6, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29855
+  Generation tokens: 200
+  TTFT: 3766.64 ms
+  TPOT: 19.46 ms
+  ITL: 38.19 ms
+  Total generation time: 7.64 s
+  Generation speed: 26.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:41] User 8, Request 20, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 30244
+  Generation tokens: 200
+  TTFT: 4904.93 ms
+  TPOT: 8.38 ms
+  ITL: 32.86 ms
+  Total generation time: 6.57 s
+  Generation speed: 30.43 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:41] User 9, Request 19, Endpoint RayServe
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 6782
+  Generation tokens: 200
+  TTFT: 4913.13 ms
+  TPOT: 7.57 ms
+  ITL: 32.10 ms
+  Total generation time: 6.42 s
+  Generation speed: 31.15 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:41] User 12, Request 15, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 25426
+  Generation tokens: 200
+  TTFT: 5942.07 ms
+  TPOT: -2.16 ms
+  ITL: 27.56 ms
+  Total generation time: 5.51 s
+  Generation speed: 36.29 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:41] User 16, Request 10, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 18908
+  Generation tokens: 200
+  TTFT: 6265.07 ms
+  TPOT: -6.65 ms
+  ITL: 24.71 ms
+  Total generation time: 4.94 s
+  Generation speed: 40.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:41] User 21, Request 4, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28381
+  Generation tokens: 200
+  TTFT: 6254.35 ms
+  TPOT: -11.97 ms
+  ITL: 19.36 ms
+  Total generation time: 3.87 s
+  Generation speed: 51.66 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:42] User 20, Request 6, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 6709
+  Generation tokens: 200
+  TTFT: 120.43 ms
+  TPOT: 13.73 ms
+  ITL: 14.26 ms
+  Total generation time: 2.85 s
+  Generation speed: 70.10 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:45] User 15, Request 12, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 25371
+  Generation tokens: 200
+  TTFT: 238.14 ms
+  TPOT: 21.79 ms
+  ITL: 22.87 ms
+  Total generation time: 4.57 s
+  Generation speed: 43.73 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:45] User 19, Request 7, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 30113
+  Generation tokens: 200
+  TTFT: 286.87 ms
+  TPOT: 20.57 ms
+  ITL: 21.90 ms
+  Total generation time: 4.38 s
+  Generation speed: 45.66 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:45] User 9, Request 20, Endpoint ProductionStack
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 7036
+  Generation tokens: 200
+  TTFT: 111.62 ms
+  TPOT: 21.17 ms
+  ITL: 21.62 ms
+  Total generation time: 4.32 s
+  Generation speed: 46.25 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:45] User 23, Request 2, Endpoint ProductionStack
+  Documents: man-sed.txt and man-unix.txt
+  Prompt tokens: 10353
+  Generation tokens: 200
+  TTFT: 120.02 ms
+  TPOT: 32.56 ms
+  ITL: 33.00 ms
+  Total generation time: 6.60 s
+  Generation speed: 30.30 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:46] User 10, Request 19, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 12700
+  Generation tokens: 200
+  TTFT: 165.96 ms
+  TPOT: 18.92 ms
+  ITL: 19.66 ms
+  Total generation time: 3.93 s
+  Generation speed: 50.87 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     47        
+Benchmark duration (s):                  29.89      
+Total input tokens:                      849587    
+Total generated tokens:                  9395      
+Request throughput (req/s):              1.57      
+Output token throughput (tok/s):         314.31    
+Total Token throughput (tok/s):          28736.95    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          218.88     
+Median TTFT (ms):                        224.23     
+P99 TTFT (ms):                           486.49     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          21.16     
+Median TPOT (ms):                        21.17     
+P99 TPOT (ms):                           29.51     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           22.14     
+Median ITL (ms):                         22.20     
+P99 ITL (ms):                            30.40     
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     48        
+Benchmark duration (s):                  25.78      
+Total input tokens:                      883596    
+Total generated tokens:                  9600      
+Request throughput (req/s):              1.86      
+Output token throughput (tok/s):         372.34    
+Total Token throughput (tok/s):          34642.81    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          2124.30     
+Median TTFT (ms):                        1403.28     
+P99 TTFT (ms):                           6260.03     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          19.90     
+Median TPOT (ms):                        19.36     
+P99 TPOT (ms):                           51.20     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           30.43     
+Median ITL (ms):                         27.84     
+P99 ITL (ms):                            54.74     
+[2025-05-22 12:44:46] User 18, Request 8, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29702
+  Generation tokens: 200
+  TTFT: 531.56 ms
+  TPOT: 23.50 ms
+  ITL: 26.04 ms
+  Total generation time: 5.21 s
+  Generation speed: 38.40 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:46] User 24, Request 1, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 28860
+  Generation tokens: 200
+  TTFT: 1415.10 ms
+  TPOT: 20.67 ms
+  ITL: 27.64 ms
+  Total generation time: 5.53 s
+  Generation speed: 36.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:46] User 11, Request 17, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 23416
+  Generation tokens: 200
+  TTFT: 594.34 ms
+  TPOT: 24.39 ms
+  ITL: 27.24 ms
+  Total generation time: 5.45 s
+  Generation speed: 36.71 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:46] User 17, Request 10, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 7059
+  Generation tokens: 200
+  TTFT: 442.73 ms
+  TPOT: 23.90 ms
+  ITL: 25.99 ms
+  Total generation time: 5.20 s
+  Generation speed: 38.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:46] User 13, Request 15, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 12377
+  Generation tokens: 200
+  TTFT: 673.84 ms
+  TPOT: 23.09 ms
+  ITL: 26.34 ms
+  Total generation time: 5.27 s
+  Generation speed: 37.96 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:46] User 16, Request 11, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 19168
+  Generation tokens: 200
+  TTFT: 271.40 ms
+  TPOT: 23.10 ms
+  ITL: 24.34 ms
+  Total generation time: 4.87 s
+  Generation speed: 41.09 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:46] User 12, Request 16, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 25680
+  Generation tokens: 200
+  TTFT: 358.81 ms
+  TPOT: 22.73 ms
+  ITL: 24.41 ms
+  Total generation time: 4.88 s
+  Generation speed: 40.96 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:46] User 21, Request 5, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28637
+  Generation tokens: 200
+  TTFT: 283.40 ms
+  TPOT: 22.08 ms
+  ITL: 23.39 ms
+  Total generation time: 4.68 s
+  Generation speed: 42.76 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:47] User 14, Request 14, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 23785
+  Generation tokens: 200
+  TTFT: 232.25 ms
+  TPOT: 20.23 ms
+  ITL: 21.29 ms
+  Total generation time: 4.26 s
+  Generation speed: 46.98 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:47] User 22, Request 4, Endpoint ProductionStack
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10832
+  Generation tokens: 200
+  TTFT: 152.13 ms
+  TPOT: 18.26 ms
+  ITL: 18.93 ms
+  Total generation time: 3.79 s
+  Generation speed: 52.83 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:47] User 10, Request 19, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 12701
+  Generation tokens: 200
+  TTFT: 585.32 ms
+  TPOT: 24.00 ms
+  ITL: 26.81 ms
+  Total generation time: 5.36 s
+  Generation speed: 37.30 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:48] User 21, Request 5, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28638
+  Generation tokens: 200
+  TTFT: 1786.23 ms
+  TPOT: 13.10 ms
+  ITL: 21.96 ms
+  Total generation time: 4.39 s
+  Generation speed: 45.53 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:48] User 14, Request 14, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 23786
+  Generation tokens: 200
+  TTFT: 1784.04 ms
+  TPOT: 9.56 ms
+  ITL: 18.43 ms
+  Total generation time: 3.69 s
+  Generation speed: 54.26 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:48] User 22, Request 4, Endpoint RayServe
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 10833
+  Generation tokens: 200
+  TTFT: 1237.00 ms
+  TPOT: 11.05 ms
+  ITL: 17.18 ms
+  Total generation time: 3.44 s
+  Generation speed: 58.21 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:50] User 23, Request 2, Endpoint RayServe
+  Documents: man-sed.txt and man-unix.txt
+  Prompt tokens: 10354
+  Generation tokens: 200
+  TTFT: 418.50 ms
+  TPOT: 51.44 ms
+  ITL: 53.28 ms
+  Total generation time: 10.66 s
+  Generation speed: 18.77 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:50] User 24, Request 1, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 28861
+  Generation tokens: 200
+  TTFT: 1530.87 ms
+  TPOT: 40.59 ms
+  ITL: 48.04 ms
+  Total generation time: 9.61 s
+  Generation speed: 20.81 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:50] User 20, Request 6, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 6710
+  Generation tokens: 200
+  TTFT: 1435.73 ms
+  TPOT: 40.36 ms
+  ITL: 47.33 ms
+  Total generation time: 9.47 s
+  Generation speed: 21.13 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:50] User 11, Request 17, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 23417
+  Generation tokens: 200
+  TTFT: 1737.96 ms
+  TPOT: 35.37 ms
+  ITL: 43.88 ms
+  Total generation time: 8.78 s
+  Generation speed: 22.79 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:50] User 13, Request 15, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 12378
+  Generation tokens: 200
+  TTFT: 2043.97 ms
+  TPOT: 32.38 ms
+  ITL: 42.43 ms
+  Total generation time: 8.49 s
+  Generation speed: 23.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:51] User 18, Request 8, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29703
+  Generation tokens: 200
+  TTFT: 3117.61 ms
+  TPOT: 21.99 ms
+  ITL: 37.47 ms
+  Total generation time: 7.49 s
+  Generation speed: 26.69 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:51] User 17, Request 10, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 7060
+  Generation tokens: 200
+  TTFT: 3226.22 ms
+  TPOT: 20.69 ms
+  ITL: 36.71 ms
+  Total generation time: 7.34 s
+  Generation speed: 27.24 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:51] User 15, Request 12, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 25372
+  Generation tokens: 200
+  TTFT: 4206.43 ms
+  TPOT: 11.52 ms
+  ITL: 32.49 ms
+  Total generation time: 6.50 s
+  Generation speed: 30.78 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:52] User 19, Request 7, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 30114
+  Generation tokens: 200
+  TTFT: 5242.41 ms
+  TPOT: 5.00 ms
+  ITL: 31.19 ms
+  Total generation time: 6.24 s
+  Generation speed: 32.06 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:52] User 9, Request 20, Endpoint RayServe
+  Documents: man-grep.txt and man-sed.txt
+  Prompt tokens: 7037
+  Generation tokens: 200
+  TTFT: 5155.20 ms
+  TPOT: 5.77 ms
+  ITL: 31.51 ms
+  Total generation time: 6.30 s
+  Generation speed: 31.73 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:53] User 20, Request 7, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 6968
+  Generation tokens: 200
+  TTFT: 82.89 ms
+  TPOT: 12.52 ms
+  ITL: 12.87 ms
+  Total generation time: 2.57 s
+  Generation speed: 77.69 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:53] User 12, Request 16, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 25681
+  Generation tokens: 200
+  TTFT: 5931.29 ms
+  TPOT: 1.85 ms
+  ITL: 31.50 ms
+  Total generation time: 6.30 s
+  Generation speed: 31.74 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:54] User 10, Request 20, Endpoint ProductionStack
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 12955
+  Generation tokens: 200
+  TTFT: 157.71 ms
+  TPOT: 13.86 ms
+  ITL: 14.58 ms
+  Total generation time: 2.92 s
+  Generation speed: 68.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:54] User 15, Request 13, Endpoint ProductionStack
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 25625
+  Generation tokens: 200
+  TTFT: 247.34 ms
+  TPOT: 12.66 ms
+  ITL: 13.84 ms
+  Total generation time: 2.77 s
+  Generation speed: 72.27 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:54] User 16, Request 11, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 19169
+  Generation tokens: 200
+  TTFT: 6553.56 ms
+  TPOT: -1.60 ms
+  ITL: 31.18 ms
+  Total generation time: 6.24 s
+  Generation speed: 32.07 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:55] User 19, Request 8, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 30372
+  Generation tokens: 200
+  TTFT: 290.08 ms
+  TPOT: 11.48 ms
+  ITL: 12.87 ms
+  Total generation time: 2.57 s
+  Generation speed: 77.68 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:56] User 23, Request 3, Endpoint ProductionStack
+  Documents: man-sed.txt and man-unix.txt
+  Prompt tokens: 10608
+  Generation tokens: 200
+  TTFT: 160.81 ms
+  TPOT: 28.97 ms
+  ITL: 29.63 ms
+  Total generation time: 5.93 s
+  Generation speed: 33.75 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:56] User 24, Request 2, Endpoint ProductionStack
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29115
+  Generation tokens: 200
+  TTFT: 269.37 ms
+  TPOT: 28.26 ms
+  ITL: 29.46 ms
+  Total generation time: 5.89 s
+  Generation speed: 33.94 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:56] User 13, Request 16, Endpoint ProductionStack
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 12636
+  Generation tokens: 200
+  TTFT: 218.17 ms
+  TPOT: 27.67 ms
+  ITL: 28.62 ms
+  Total generation time: 5.72 s
+  Generation speed: 34.94 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:56] User 11, Request 18, Endpoint ProductionStack
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 23673
+  Generation tokens: 200
+  TTFT: 304.81 ms
+  TPOT: 27.30 ms
+  ITL: 28.69 ms
+  Total generation time: 5.74 s
+  Generation speed: 34.85 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:56] User 21, Request 6, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28892
+  Generation tokens: 200
+  TTFT: 543.36 ms
+  TPOT: 22.72 ms
+  ITL: 25.32 ms
+  Total generation time: 5.06 s
+  Generation speed: 39.49 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:56] User 18, Request 9, Endpoint ProductionStack
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29962
+  Generation tokens: 200
+  TTFT: 564.80 ms
+  TPOT: 23.58 ms
+  ITL: 26.29 ms
+  Total generation time: 5.26 s
+  Generation speed: 38.04 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:56] User 25, Request 1, Endpoint ProductionStack
+  Documents: man-grep.txt and man-unix.txt
+  Prompt tokens: 8167
+  Generation tokens: 200
+  TTFT: 634.31 ms
+  TPOT: 22.34 ms
+  ITL: 25.40 ms
+  Total generation time: 5.08 s
+  Generation speed: 39.37 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:56] User 17, Request 11, Endpoint ProductionStack
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 7315
+  Generation tokens: 200
+  TTFT: 643.10 ms
+  TPOT: 22.30 ms
+  ITL: 25.40 ms
+  Total generation time: 5.08 s
+  Generation speed: 39.37 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:57] User 14, Request 15, Endpoint ProductionStack
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 24040
+  Generation tokens: 200
+  TTFT: 256.27 ms
+  TPOT: 23.16 ms
+  ITL: 24.32 ms
+  Total generation time: 4.86 s
+  Generation speed: 41.11 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:57] User 22, Request 5, Endpoint ProductionStack
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 11085
+  Generation tokens: 200
+  TTFT: 133.78 ms
+  TPOT: 21.72 ms
+  ITL: 22.28 ms
+  Total generation time: 4.46 s
+  Generation speed: 44.89 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:58] User 12, Request 17, Endpoint ProductionStack
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 25935
+  Generation tokens: 200
+  TTFT: 246.05 ms
+  TPOT: 19.12 ms
+  ITL: 20.26 ms
+  Total generation time: 4.05 s
+  Generation speed: 49.37 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:58] User 16, Request 12, Endpoint ProductionStack
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 19427
+  Generation tokens: 200
+  TTFT: 238.94 ms
+  TPOT: 17.02 ms
+  ITL: 18.13 ms
+  Total generation time: 3.63 s
+  Generation speed: 55.15 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:58] User 10, Request 20, Endpoint RayServe
+  Documents: man-bash.txt and man-grep.txt
+  Prompt tokens: 12956
+  Generation tokens: 200
+  TTFT: 628.45 ms
+  TPOT: 30.91 ms
+  ITL: 33.89 ms
+  Total generation time: 6.78 s
+  Generation speed: 29.50 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:58] User 15, Request 13, Endpoint RayServe
+  Documents: man-python.txt and man-ffmpeg.txt
+  Prompt tokens: 25626
+  Generation tokens: 200
+  TTFT: 1532.52 ms
+  TPOT: 22.39 ms
+  ITL: 29.94 ms
+  Total generation time: 5.99 s
+  Generation speed: 33.40 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:59] User 14, Request 15, Endpoint RayServe
+  Documents: man-unix.txt and man-ffmpeg.txt
+  Prompt tokens: 24041
+  Generation tokens: 200
+  TTFT: 1738.44 ms
+  TPOT: 17.34 ms
+  ITL: 25.95 ms
+  Total generation time: 5.19 s
+  Generation speed: 38.54 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:59] User 22, Request 5, Endpoint RayServe
+  Documents: man-python.txt and man-unix.txt
+  Prompt tokens: 11086
+  Generation tokens: 200
+  TTFT: 1220.91 ms
+  TPOT: 18.52 ms
+  ITL: 24.53 ms
+  Total generation time: 4.91 s
+  Generation speed: 40.77 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:59] User 12, Request 17, Endpoint RayServe
+  Documents: man-grep.txt and man-ffmpeg.txt
+  Prompt tokens: 25936
+  Generation tokens: 200
+  TTFT: 1536.77 ms
+  TPOT: 12.80 ms
+  ITL: 20.42 ms
+  Total generation time: 4.08 s
+  Generation speed: 48.97 tokens/s
+---------------------------------------------------
+[2025-05-22 12:44:59] User 16, Request 12, Endpoint RayServe
+  Documents: man-sed.txt and man-bash.txt
+  Prompt tokens: 19428
+  Generation tokens: 200
+  TTFT: 1543.40 ms
+  TPOT: 9.99 ms
+  ITL: 17.65 ms
+  Total generation time: 3.53 s
+  Generation speed: 56.64 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:00] User 23, Request 3, Endpoint RayServe
+  Documents: man-sed.txt and man-unix.txt
+  Prompt tokens: 10609
+  Generation tokens: 200
+  TTFT: 468.72 ms
+  TPOT: 45.03 ms
+  ITL: 47.15 ms
+  Total generation time: 9.43 s
+  Generation speed: 21.21 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:00] User 24, Request 2, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 29116
+  Generation tokens: 200
+  TTFT: 1479.20 ms
+  TPOT: 35.27 ms
+  ITL: 42.49 ms
+  Total generation time: 8.50 s
+  Generation speed: 23.53 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:00] User 20, Request 7, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-sed.txt
+  Prompt tokens: 6969
+  Generation tokens: 200
+  TTFT: 1581.05 ms
+  TPOT: 34.01 ms
+  ITL: 41.74 ms
+  Total generation time: 8.35 s
+  Generation speed: 23.96 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:00] User 11, Request 18, Endpoint RayServe
+  Documents: man-grep.txt and man-bash.txt
+  Prompt tokens: 23674
+  Generation tokens: 200
+  TTFT: 2341.80 ms
+  TPOT: 26.46 ms
+  ITL: 38.04 ms
+  Total generation time: 7.61 s
+  Generation speed: 26.29 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:00] User 13, Request 16, Endpoint RayServe
+  Documents: man-sed.txt and man-grep.txt
+  Prompt tokens: 12637
+  Generation tokens: 200
+  TTFT: 2650.26 ms
+  TPOT: 23.42 ms
+  ITL: 36.55 ms
+  Total generation time: 7.31 s
+  Generation speed: 27.36 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:01] User 18, Request 9, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 29963
+  Generation tokens: 200
+  TTFT: 3679.83 ms
+  TPOT: 12.90 ms
+  ITL: 31.24 ms
+  Total generation time: 6.25 s
+  Generation speed: 32.01 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:01] User 17, Request 11, Endpoint RayServe
+  Documents: man-bash.txt and man-sed.txt
+  Prompt tokens: 7316
+  Generation tokens: 200
+  TTFT: 3787.80 ms
+  TPOT: 11.59 ms
+  ITL: 30.47 ms
+  Total generation time: 6.09 s
+  Generation speed: 32.82 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:01] User 25, Request 1, Endpoint RayServe
+  Documents: man-grep.txt and man-unix.txt
+  Prompt tokens: 8168
+  Generation tokens: 200
+  TTFT: 4039.06 ms
+  TPOT: 9.38 ms
+  ITL: 29.53 ms
+  Total generation time: 5.91 s
+  Generation speed: 33.86 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:01] User 21, Request 6, Endpoint RayServe
+  Documents: man-python.txt and man-bash.txt
+  Prompt tokens: 28893
+  Generation tokens: 200
+  TTFT: 5173.65 ms
+  TPOT: -1.37 ms
+  ITL: 24.51 ms
+  Total generation time: 4.90 s
+  Generation speed: 40.80 tokens/s
+---------------------------------------------------
+[2025-05-22 12:45:01] User 19, Request 8, Endpoint RayServe
+  Documents: man-ffmpeg.txt and man-bash.txt
+  Prompt tokens: 30373
+  Generation tokens: 200
+  TTFT: 5379.64 ms
+  TPOT: -8.25 ms
+  ITL: 18.69 ms
+  Total generation time: 3.74 s
+  Generation speed: 53.51 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     163       
+Benchmark duration (s):                  102.75      
+Total input tokens:                      2827851   
+Total generated tokens:                  32595     
+Request throughput (req/s):              1.59      
+Output token throughput (tok/s):         317.23    
+Total Token throughput (tok/s):          27839.30    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          338.61     
+Median TTFT (ms):                        225.51     
+P99 TTFT (ms):                           1799.49     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          20.02     
+Median TPOT (ms):                        20.94     
+P99 TPOT (ms):                           32.77     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           21.61     
+Median ITL (ms):                         22.11     
+P99 ITL (ms):                            39.06     
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     163       
+Benchmark duration (s):                  106.00      
+Total input tokens:                      2828014   
+Total generated tokens:                  32600     
+Request throughput (req/s):              1.54      
+Output token throughput (tok/s):         307.55    
+Total Token throughput (tok/s):          26987.38    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          1920.90     
+Median TTFT (ms):                        1396.94     
+P99 TTFT (ms):                           6258.43     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          20.51     
+Median TPOT (ms):                        19.46     
+P99 TPOT (ms):                           48.96     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           30.01     
+Median ITL (ms):                         28.11     
+P99 ITL (ms):                            53.01     
+
+
+=======================================================
+FINAL COMPARISON SUMMARY (QPS: 1.6)
+=======================================================
+
+Key Performance Comparison:
+ProductionStack TTFT: 338.61 ms | RayServe TTFT: 1920.90 ms
+Difference: -1582.29 ms (-82.37%)
+
+ProductionStack ITL: 21.61 ms | RayServe ITL: 30.01 ms
+Difference: -8.40 ms (-28.00%)
+
+Documentation Usage Statistics:
+Total unique sessions with documentation: 16
+Document frequency:
+  man-unix.txt: 4 times (12.5%)
+  man-python.txt: 4 times (12.5%)
+  man-sed.txt: 5 times (15.6%)
+  man-grep.txt: 5 times (15.6%)
+  man-bash.txt: 8 times (25.0%)
+  man-ffmpeg.txt: 6 times (18.8%)
+
+Test completed at: 2025-05-22 12:45:01

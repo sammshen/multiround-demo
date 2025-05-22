@@ -1,0 +1,368 @@
+Real-time comparison statistics for QPS: 0.1
+Model: meta-llama/Llama-3.1-8B-Instruct
+Started at: 2025-05-22 11:48:54
+=======================================================
+Comparing Production Stack (localhost:30080) vs. Ray Serve (localhost:30081)
+
+[2025-05-22 11:48:58] User 17, Request 1, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 794.81 ms
+  TPOT: 2.84 ms
+  ITL: 10.76 ms
+  Total generation time: 1.08 s
+  Generation speed: 92.94 tokens/s
+---------------------------------------------------
+[2025-05-22 11:48:58] User 17, Request 1, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 819.02 ms
+  TPOT: 7.33 ms
+  ITL: 15.45 ms
+  Total generation time: 1.55 s
+  Generation speed: 64.72 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:08] User 6, Request 15, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 798.63 ms
+  TPOT: 2.69 ms
+  ITL: 10.65 ms
+  Total generation time: 1.07 s
+  Generation speed: 93.87 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:08] User 6, Request 15, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 824.22 ms
+  TPOT: 7.89 ms
+  ITL: 16.05 ms
+  Total generation time: 1.61 s
+  Generation speed: 62.29 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:18] User 10, Request 10, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 805.16 ms
+  TPOT: 2.67 ms
+  ITL: 10.70 ms
+  Total generation time: 1.07 s
+  Generation speed: 93.50 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:18] User 10, Request 10, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 825.30 ms
+  TPOT: 7.13 ms
+  ITL: 15.31 ms
+  Total generation time: 1.53 s
+  Generation speed: 65.32 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     3         
+Benchmark duration (s):                  21.91      
+Total input tokens:                      63219     
+Total generated tokens:                  300       
+Request throughput (req/s):              0.14      
+Output token throughput (tok/s):         13.69    
+Total Token throughput (tok/s):          2899.19    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          799.54     
+Median TTFT (ms):                        798.63     
+P99 TTFT (ms):                           805.03     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          2.73     
+Median TPOT (ms):                        2.69     
+P99 TPOT (ms):                           2.84     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           10.70     
+Median ITL (ms):                         10.70     
+P99 ITL (ms):                            10.76     
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     3         
+Benchmark duration (s):                  22.39      
+Total input tokens:                      63222     
+Total generated tokens:                  300       
+Request throughput (req/s):              0.13      
+Output token throughput (tok/s):         13.40    
+Total Token throughput (tok/s):          2836.76    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          822.85     
+Median TTFT (ms):                        824.22     
+P99 TTFT (ms):                           825.28     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          7.45     
+Median TPOT (ms):                        7.33     
+P99 TPOT (ms):                           7.88     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           15.60     
+Median ITL (ms):                         15.45     
+P99 ITL (ms):                            16.04     
+[2025-05-22 11:49:28] User 14, Request 5, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 794.12 ms
+  TPOT: 2.91 ms
+  ITL: 10.82 ms
+  Total generation time: 1.08 s
+  Generation speed: 92.42 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:28] User 14, Request 5, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 822.16 ms
+  TPOT: 7.43 ms
+  ITL: 15.58 ms
+  Total generation time: 1.56 s
+  Generation speed: 64.19 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:38] User 3, Request 19, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 792.47 ms
+  TPOT: 2.87 ms
+  ITL: 10.76 ms
+  Total generation time: 1.08 s
+  Generation speed: 92.90 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:38] User 3, Request 19, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 824.39 ms
+  TPOT: 7.96 ms
+  ITL: 16.12 ms
+  Total generation time: 1.61 s
+  Generation speed: 62.03 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:48] User 7, Request 14, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 796.84 ms
+  TPOT: 2.85 ms
+  ITL: 10.79 ms
+  Total generation time: 1.08 s
+  Generation speed: 92.68 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:48] User 7, Request 14, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 817.62 ms
+  TPOT: 7.02 ms
+  ITL: 15.12 ms
+  Total generation time: 1.51 s
+  Generation speed: 66.13 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     3         
+Benchmark duration (s):                  21.81      
+Total input tokens:                      63219     
+Total generated tokens:                  300       
+Request throughput (req/s):              0.14      
+Output token throughput (tok/s):         13.76    
+Total Token throughput (tok/s):          2912.89    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          794.48     
+Median TTFT (ms):                        794.12     
+P99 TTFT (ms):                           796.79     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          2.88     
+Median TPOT (ms):                        2.87     
+P99 TPOT (ms):                           2.91     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           10.79     
+Median ITL (ms):                         10.79     
+P99 ITL (ms):                            10.82     
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     3         
+Benchmark duration (s):                  22.26      
+Total input tokens:                      63222     
+Total generated tokens:                  300       
+Request throughput (req/s):              0.13      
+Output token throughput (tok/s):         13.48    
+Total Token throughput (tok/s):          2853.42    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          821.39     
+Median TTFT (ms):                        822.16     
+P99 TTFT (ms):                           824.34     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          7.47     
+Median TPOT (ms):                        7.43     
+P99 TPOT (ms):                           7.95     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           15.61     
+Median ITL (ms):                         15.58     
+P99 ITL (ms):                            16.11     
+[2025-05-22 11:49:58] User 11, Request 9, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 795.12 ms
+  TPOT: 2.82 ms
+  ITL: 10.74 ms
+  Total generation time: 1.07 s
+  Generation speed: 93.08 tokens/s
+---------------------------------------------------
+[2025-05-22 11:49:58] User 11, Request 9, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 823.58 ms
+  TPOT: 7.27 ms
+  ITL: 15.43 ms
+  Total generation time: 1.54 s
+  Generation speed: 64.80 tokens/s
+---------------------------------------------------
+[2025-05-22 11:50:08] User 15, Request 4, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 796.78 ms
+  TPOT: 2.78 ms
+  ITL: 10.72 ms
+  Total generation time: 1.07 s
+  Generation speed: 93.32 tokens/s
+---------------------------------------------------
+[2025-05-22 11:50:08] User 15, Request 4, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 821.41 ms
+  TPOT: 7.38 ms
+  ITL: 15.52 ms
+  Total generation time: 1.55 s
+  Generation speed: 64.43 tokens/s
+---------------------------------------------------
+[2025-05-22 11:50:18] User 4, Request 18, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 794.09 ms
+  TPOT: 2.78 ms
+  ITL: 10.70 ms
+  Total generation time: 1.07 s
+  Generation speed: 93.49 tokens/s
+---------------------------------------------------
+[2025-05-22 11:50:18] User 4, Request 18, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 823.98 ms
+  TPOT: 7.09 ms
+  ITL: 15.26 ms
+  Total generation time: 1.53 s
+  Generation speed: 65.52 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     3         
+Benchmark duration (s):                  21.69      
+Total input tokens:                      63219     
+Total generated tokens:                  300       
+Request throughput (req/s):              0.14      
+Output token throughput (tok/s):         13.83    
+Total Token throughput (tok/s):          2928.35    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          795.33     
+Median TTFT (ms):                        795.12     
+P99 TTFT (ms):                           796.74     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          2.79     
+Median TPOT (ms):                        2.78     
+P99 TPOT (ms):                           2.82     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           10.72     
+Median ITL (ms):                         10.72     
+P99 ITL (ms):                            10.74     
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     3         
+Benchmark duration (s):                  22.18      
+Total input tokens:                      63222     
+Total generated tokens:                  300       
+Request throughput (req/s):              0.14      
+Output token throughput (tok/s):         13.53    
+Total Token throughput (tok/s):          2864.01    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          822.99     
+Median TTFT (ms):                        823.58     
+P99 TTFT (ms):                           823.97     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          7.25     
+Median TPOT (ms):                        7.27     
+P99 TPOT (ms):                           7.38     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           15.41     
+Median ITL (ms):                         15.43     
+P99 ITL (ms):                            15.52     
+[2025-05-22 11:50:28] User 8, Request 13, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 792.97 ms
+  TPOT: 2.80 ms
+  ITL: 10.70 ms
+  Total generation time: 1.07 s
+  Generation speed: 93.42 tokens/s
+---------------------------------------------------
+[2025-05-22 11:50:28] User 8, Request 13, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 824.27 ms
+  TPOT: 7.09 ms
+  ITL: 15.26 ms
+  Total generation time: 1.53 s
+  Generation speed: 65.51 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     10        
+Benchmark duration (s):                  91.88      
+Total input tokens:                      210730    
+Total generated tokens:                  1000      
+Request throughput (req/s):              0.11      
+Output token throughput (tok/s):         10.88    
+Total Token throughput (tok/s):          2304.43    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          796.10     
+Median TTFT (ms):                        794.96     
+P99 TTFT (ms):                           804.58     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          2.80     
+Median TPOT (ms):                        2.81     
+P99 TPOT (ms):                           2.90     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           10.73     
+Median ITL (ms):                         10.73     
+P99 ITL (ms):                            10.82     
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     10        
+Benchmark duration (s):                  92.37      
+Total input tokens:                      210740    
+Total generated tokens:                  1000      
+Request throughput (req/s):              0.11      
+Output token throughput (tok/s):         10.83    
+Total Token throughput (tok/s):          2292.34    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          822.59     
+Median TTFT (ms):                        823.78     
+P99 TTFT (ms):                           825.22     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          7.36     
+Median TPOT (ms):                        7.30     
+P99 TPOT (ms):                           7.95     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           15.51     
+Median ITL (ms):                         15.44     
+P99 ITL (ms):                            16.11     
+
+
+=======================================================
+FINAL COMPARISON SUMMARY (QPS: 0.1)
+=======================================================
+
+Key Performance Comparison:
+ProductionStack TTFT: 796.10 ms | RayServe TTFT: 822.59 ms
+Difference: -26.49 ms (-3.22%)
+
+ProductionStack ITL: 10.73 ms | RayServe ITL: 15.51 ms
+Difference: -4.78 ms (-30.80%)
+
+Test completed at: 2025-05-22 11:50:36

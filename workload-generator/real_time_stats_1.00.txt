@@ -1,0 +1,2078 @@
+Real-time comparison statistics for QPS: 1.0
+Model: meta-llama/Llama-3.1-8B-Instruct
+Started at: 2025-05-22 12:04:10
+=======================================================
+Comparing Production Stack (localhost:30080) vs. Ray Serve (localhost:30081)
+
+[2025-05-22 12:04:13] User 17, Request 1, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 214.86 ms
+  TPOT: 8.72 ms
+  ITL: 10.78 ms
+  Total generation time: 1.08 s
+  Generation speed: 92.79 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:15] User 6, Request 15, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 205.30 ms
+  TPOT: 10.82 ms
+  ITL: 12.76 ms
+  Total generation time: 1.28 s
+  Generation speed: 78.35 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:15] User 17, Request 1, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 819.16 ms
+  TPOT: 14.22 ms
+  ITL: 22.27 ms
+  Total generation time: 2.23 s
+  Generation speed: 44.91 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:15] User 10, Request 10, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 167.54 ms
+  TPOT: 9.58 ms
+  ITL: 11.16 ms
+  Total generation time: 1.12 s
+  Generation speed: 89.63 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:16] User 6, Request 15, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 873.12 ms
+  TPOT: 7.30 ms
+  ITL: 15.96 ms
+  Total generation time: 1.60 s
+  Generation speed: 62.66 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:17] User 14, Request 5, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 170.46 ms
+  TPOT: 10.66 ms
+  ITL: 12.26 ms
+  Total generation time: 1.23 s
+  Generation speed: 81.56 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:17] User 10, Request 10, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 818.99 ms
+  TPOT: 14.03 ms
+  ITL: 22.08 ms
+  Total generation time: 2.21 s
+  Generation speed: 45.29 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:18] User 3, Request 19, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 172.90 ms
+  TPOT: 11.15 ms
+  ITL: 12.77 ms
+  Total generation time: 1.28 s
+  Generation speed: 78.29 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:18] User 14, Request 5, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 868.10 ms
+  TPOT: 13.61 ms
+  ITL: 22.16 ms
+  Total generation time: 2.22 s
+  Generation speed: 45.13 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:19] User 7, Request 14, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 175.16 ms
+  TPOT: 11.09 ms
+  ITL: 12.73 ms
+  Total generation time: 1.27 s
+  Generation speed: 78.56 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:19] User 3, Request 19, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 821.22 ms
+  TPOT: 13.58 ms
+  ITL: 21.65 ms
+  Total generation time: 2.17 s
+  Generation speed: 46.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:20] User 11, Request 9, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 212.98 ms
+  TPOT: 9.08 ms
+  ITL: 11.12 ms
+  Total generation time: 1.11 s
+  Generation speed: 89.95 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:20] User 7, Request 14, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 823.38 ms
+  TPOT: 13.96 ms
+  ITL: 22.05 ms
+  Total generation time: 2.20 s
+  Generation speed: 45.35 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:21] User 11, Request 9, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 867.97 ms
+  TPOT: 6.45 ms
+  ITL: 15.07 ms
+  Total generation time: 1.51 s
+  Generation speed: 66.37 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:21] User 15, Request 4, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 204.29 ms
+  TPOT: 10.10 ms
+  ITL: 12.04 ms
+  Total generation time: 1.20 s
+  Generation speed: 83.04 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:22] User 4, Request 18, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 212.32 ms
+  TPOT: 8.83 ms
+  ITL: 10.86 ms
+  Total generation time: 1.09 s
+  Generation speed: 92.06 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:22] User 15, Request 4, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 871.07 ms
+  TPOT: 13.02 ms
+  ITL: 21.60 ms
+  Total generation time: 2.16 s
+  Generation speed: 46.30 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:23] User 4, Request 18, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 820.88 ms
+  TPOT: 7.66 ms
+  ITL: 15.79 ms
+  Total generation time: 1.58 s
+  Generation speed: 63.34 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:23] User 8, Request 13, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 209.05 ms
+  TPOT: 10.21 ms
+  ITL: 12.20 ms
+  Total generation time: 1.22 s
+  Generation speed: 82.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:24] User 12, Request 8, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 205.57 ms
+  TPOT: 10.68 ms
+  ITL: 12.62 ms
+  Total generation time: 1.26 s
+  Generation speed: 79.21 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:24] User 8, Request 13, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 816.24 ms
+  TPOT: 13.65 ms
+  ITL: 21.68 ms
+  Total generation time: 2.17 s
+  Generation speed: 46.13 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:25] User 16, Request 3, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 207.92 ms
+  TPOT: 10.69 ms
+  ITL: 12.66 ms
+  Total generation time: 1.27 s
+  Generation speed: 78.98 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:25] User 12, Request 8, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 872.18 ms
+  TPOT: 12.97 ms
+  ITL: 21.56 ms
+  Total generation time: 2.16 s
+  Generation speed: 46.38 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:26] User 5, Request 17, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 213.91 ms
+  TPOT: 9.02 ms
+  ITL: 11.07 ms
+  Total generation time: 1.11 s
+  Generation speed: 90.36 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:26] User 16, Request 3, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 821.82 ms
+  TPOT: 13.07 ms
+  ITL: 21.15 ms
+  Total generation time: 2.12 s
+  Generation speed: 47.27 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:26] User 9, Request 12, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 203.22 ms
+  TPOT: 8.64 ms
+  ITL: 10.58 ms
+  Total generation time: 1.06 s
+  Generation speed: 94.50 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:27] User 5, Request 17, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 867.59 ms
+  TPOT: 12.54 ms
+  ITL: 21.09 ms
+  Total generation time: 2.11 s
+  Generation speed: 47.42 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:28] User 9, Request 12, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 819.67 ms
+  TPOT: 7.31 ms
+  ITL: 15.44 ms
+  Total generation time: 1.54 s
+  Generation speed: 64.78 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:28] User 13, Request 7, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 204.17 ms
+  TPOT: 10.41 ms
+  ITL: 12.34 ms
+  Total generation time: 1.23 s
+  Generation speed: 81.01 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:29] User 17, Request 2, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 177.76 ms
+  TPOT: 9.40 ms
+  ITL: 11.08 ms
+  Total generation time: 1.11 s
+  Generation speed: 90.25 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:29] User 13, Request 7, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 873.89 ms
+  TPOT: 12.96 ms
+  ITL: 21.56 ms
+  Total generation time: 2.16 s
+  Generation speed: 46.37 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:30] User 6, Request 16, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 165.24 ms
+  TPOT: 10.66 ms
+  ITL: 12.21 ms
+  Total generation time: 1.22 s
+  Generation speed: 81.91 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:30] User 17, Request 2, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 871.85 ms
+  TPOT: 13.07 ms
+  ITL: 21.66 ms
+  Total generation time: 2.17 s
+  Generation speed: 46.16 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:31] User 10, Request 11, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 175.92 ms
+  TPOT: 9.28 ms
+  ITL: 10.95 ms
+  Total generation time: 1.09 s
+  Generation speed: 91.36 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:31] User 6, Request 16, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 821.50 ms
+  TPOT: 13.00 ms
+  ITL: 21.09 ms
+  Total generation time: 2.11 s
+  Generation speed: 47.42 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:32] User 14, Request 6, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 171.75 ms
+  TPOT: 11.56 ms
+  ITL: 13.16 ms
+  Total generation time: 1.32 s
+  Generation speed: 76.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:33] User 3, Request 20, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 276.25 ms
+  TPOT: 10.71 ms
+  ITL: 13.37 ms
+  Total generation time: 1.34 s
+  Generation speed: 74.81 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:33] User 18, Request 1, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 286.10 ms
+  TPOT: 10.49 ms
+  ITL: 13.24 ms
+  Total generation time: 1.32 s
+  Generation speed: 75.50 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:33] User 10, Request 11, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 868.98 ms
+  TPOT: 19.24 ms
+  ITL: 27.74 ms
+  Total generation time: 2.77 s
+  Generation speed: 36.05 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:33] User 14, Request 6, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 820.42 ms
+  TPOT: 13.34 ms
+  ITL: 21.41 ms
+  Total generation time: 2.14 s
+  Generation speed: 46.70 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:34] User 7, Request 15, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 172.74 ms
+  TPOT: 10.94 ms
+  ITL: 12.56 ms
+  Total generation time: 1.26 s
+  Generation speed: 79.62 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:34] User 3, Request 20, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 927.55 ms
+  TPOT: 12.18 ms
+  ITL: 21.33 ms
+  Total generation time: 2.13 s
+  Generation speed: 46.88 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:34] User 18, Request 1, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 1635.44 ms
+  TPOT: -0.60 ms
+  ITL: 15.76 ms
+  Total generation time: 1.58 s
+  Generation speed: 63.44 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:35] User 11, Request 10, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 167.44 ms
+  TPOT: 9.45 ms
+  ITL: 11.03 ms
+  Total generation time: 1.10 s
+  Generation speed: 90.63 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:36] User 15, Request 5, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 168.72 ms
+  TPOT: 10.53 ms
+  ITL: 12.11 ms
+  Total generation time: 1.21 s
+  Generation speed: 82.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:37] User 4, Request 19, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 173.60 ms
+  TPOT: 9.30 ms
+  ITL: 10.95 ms
+  Total generation time: 1.09 s
+  Generation speed: 91.35 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:37] User 7, Request 15, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 873.12 ms
+  TPOT: 25.78 ms
+  ITL: 34.25 ms
+  Total generation time: 3.43 s
+  Generation speed: 29.20 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:37] User 11, Request 10, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 819.72 ms
+  TPOT: 20.74 ms
+  ITL: 28.73 ms
+  Total generation time: 2.87 s
+  Generation speed: 34.80 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:37] User 15, Request 5, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 825.00 ms
+  TPOT: 14.62 ms
+  ITL: 22.72 ms
+  Total generation time: 2.27 s
+  Generation speed: 44.01 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:38] User 8, Request 14, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 169.52 ms
+  TPOT: 10.78 ms
+  ITL: 12.37 ms
+  Total generation time: 1.24 s
+  Generation speed: 80.87 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:38] User 4, Request 19, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 871.46 ms
+  TPOT: 7.43 ms
+  ITL: 16.07 ms
+  Total generation time: 1.61 s
+  Generation speed: 62.21 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:39] User 12, Request 9, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 183.75 ms
+  TPOT: 10.99 ms
+  ITL: 12.72 ms
+  Total generation time: 1.27 s
+  Generation speed: 78.61 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:40] User 16, Request 4, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 169.03 ms
+  TPOT: 11.21 ms
+  ITL: 12.79 ms
+  Total generation time: 1.28 s
+  Generation speed: 78.21 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:41] User 5, Request 18, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 171.25 ms
+  TPOT: 9.51 ms
+  ITL: 11.13 ms
+  Total generation time: 1.11 s
+  Generation speed: 89.84 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:41] User 8, Request 14, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 820.43 ms
+  TPOT: 26.89 ms
+  ITL: 34.82 ms
+  Total generation time: 3.48 s
+  Generation speed: 28.72 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:41] User 12, Request 9, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 870.54 ms
+  TPOT: 20.12 ms
+  ITL: 28.62 ms
+  Total generation time: 2.86 s
+  Generation speed: 34.93 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:41] User 9, Request 13, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 164.47 ms
+  TPOT: 9.03 ms
+  ITL: 10.59 ms
+  Total generation time: 1.06 s
+  Generation speed: 94.44 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:42] User 16, Request 4, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 874.91 ms
+  TPOT: 16.56 ms
+  ITL: 25.15 ms
+  Total generation time: 2.51 s
+  Generation speed: 39.77 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     28        
+Benchmark duration (s):                  29.46      
+Total input tokens:                      591620    
+Total generated tokens:                  2800      
+Request throughput (req/s):              0.95      
+Output token throughput (tok/s):         95.06    
+Total Token throughput (tok/s):          20179.77    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          877.01     
+Median TTFT (ms):                        867.78     
+P99 TTFT (ms):                           1444.31     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          13.52     
+Median TPOT (ms):                        13.21     
+P99 TPOT (ms):                           26.59     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           22.16     
+Median ITL (ms):                         21.62     
+P99 ITL (ms):                            34.67     
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     30        
+Benchmark duration (s):                  29.29      
+Total input tokens:                      633996    
+Total generated tokens:                  3000      
+Request throughput (req/s):              1.02      
+Output token throughput (tok/s):         102.42    
+Total Token throughput (tok/s):          21746.92    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          192.44     
+Median TTFT (ms):                        176.84     
+P99 TTFT (ms):                           283.25     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          10.12     
+Median TPOT (ms):                        10.45     
+P99 TPOT (ms):                           11.46     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           11.94     
+Median ITL (ms):                         12.20     
+P99 ITL (ms):                            13.33     
+[2025-05-22 12:04:42] User 5, Request 18, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 870.96 ms
+  TPOT: 13.92 ms
+  ITL: 22.49 ms
+  Total generation time: 2.25 s
+  Generation speed: 44.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:43] User 13, Request 8, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 166.09 ms
+  TPOT: 10.63 ms
+  ITL: 12.19 ms
+  Total generation time: 1.22 s
+  Generation speed: 82.04 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:43] User 9, Request 13, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 823.11 ms
+  TPOT: 13.04 ms
+  ITL: 21.14 ms
+  Total generation time: 2.11 s
+  Generation speed: 47.30 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:44] User 17, Request 3, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 195.26 ms
+  TPOT: 8.90 ms
+  ITL: 10.76 ms
+  Total generation time: 1.08 s
+  Generation speed: 92.95 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:44] User 13, Request 8, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 871.84 ms
+  TPOT: 14.18 ms
+  ITL: 22.76 ms
+  Total generation time: 2.28 s
+  Generation speed: 43.94 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:45] User 6, Request 17, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 167.78 ms
+  TPOT: 11.21 ms
+  ITL: 12.78 ms
+  Total generation time: 1.28 s
+  Generation speed: 78.28 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:45] User 17, Request 3, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 824.62 ms
+  TPOT: 13.67 ms
+  ITL: 21.78 ms
+  Total generation time: 2.18 s
+  Generation speed: 45.91 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:46] User 10, Request 12, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 181.81 ms
+  TPOT: 9.35 ms
+  ITL: 11.07 ms
+  Total generation time: 1.11 s
+  Generation speed: 90.33 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:46] User 6, Request 17, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 872.28 ms
+  TPOT: 12.78 ms
+  ITL: 21.37 ms
+  Total generation time: 2.14 s
+  Generation speed: 46.78 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:47] User 14, Request 7, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 187.18 ms
+  TPOT: 11.50 ms
+  ITL: 13.26 ms
+  Total generation time: 1.33 s
+  Generation speed: 75.43 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:47] User 10, Request 12, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 868.23 ms
+  TPOT: 13.01 ms
+  ITL: 21.57 ms
+  Total generation time: 2.16 s
+  Generation speed: 46.37 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:48] User 18, Request 2, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 184.98 ms
+  TPOT: 11.29 ms
+  ITL: 13.03 ms
+  Total generation time: 1.30 s
+  Generation speed: 76.74 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:48] User 14, Request 7, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 871.38 ms
+  TPOT: 12.78 ms
+  ITL: 21.36 ms
+  Total generation time: 2.14 s
+  Generation speed: 46.81 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:49] User 7, Request 16, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 173.43 ms
+  TPOT: 11.21 ms
+  ITL: 12.83 ms
+  Total generation time: 1.28 s
+  Generation speed: 77.93 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:49] User 18, Request 2, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 819.42 ms
+  TPOT: 13.78 ms
+  ITL: 21.84 ms
+  Total generation time: 2.18 s
+  Generation speed: 45.80 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:50] User 11, Request 11, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 168.55 ms
+  TPOT: 9.55 ms
+  ITL: 11.14 ms
+  Total generation time: 1.11 s
+  Generation speed: 89.81 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:50] User 7, Request 16, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 875.64 ms
+  TPOT: 12.62 ms
+  ITL: 21.25 ms
+  Total generation time: 2.12 s
+  Generation speed: 47.06 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:51] User 15, Request 6, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 166.96 ms
+  TPOT: 11.60 ms
+  ITL: 13.15 ms
+  Total generation time: 1.32 s
+  Generation speed: 76.04 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:52] User 15, Request 6, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 869.60 ms
+  TPOT: 6.25 ms
+  ITL: 14.88 ms
+  Total generation time: 1.49 s
+  Generation speed: 67.20 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:52] User 4, Request 20, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 281.03 ms
+  TPOT: 10.02 ms
+  ITL: 12.73 ms
+  Total generation time: 1.27 s
+  Generation speed: 78.54 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:52] User 19, Request 1, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 289.69 ms
+  TPOT: 9.81 ms
+  ITL: 12.61 ms
+  Total generation time: 1.26 s
+  Generation speed: 79.29 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:52] User 11, Request 11, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 818.70 ms
+  TPOT: 20.41 ms
+  ITL: 28.39 ms
+  Total generation time: 2.84 s
+  Generation speed: 35.23 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:53] User 8, Request 15, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 175.44 ms
+  TPOT: 11.07 ms
+  ITL: 12.71 ms
+  Total generation time: 1.27 s
+  Generation speed: 78.67 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:54] User 12, Request 10, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 182.21 ms
+  TPOT: 11.12 ms
+  ITL: 12.83 ms
+  Total generation time: 1.28 s
+  Generation speed: 77.91 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:54] User 4, Request 20, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 925.21 ms
+  TPOT: 18.96 ms
+  ITL: 28.02 ms
+  Total generation time: 2.80 s
+  Generation speed: 35.68 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:54] User 19, Request 1, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 1675.10 ms
+  TPOT: 5.44 ms
+  ITL: 22.13 ms
+  Total generation time: 2.21 s
+  Generation speed: 45.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:54] User 8, Request 15, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 1429.98 ms
+  TPOT: 2.03 ms
+  ITL: 16.31 ms
+  Total generation time: 1.63 s
+  Generation speed: 61.31 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:55] User 16, Request 5, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 177.79 ms
+  TPOT: 11.17 ms
+  ITL: 12.83 ms
+  Total generation time: 1.28 s
+  Generation speed: 77.91 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:56] User 5, Request 19, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 169.92 ms
+  TPOT: 9.55 ms
+  ITL: 11.16 ms
+  Total generation time: 1.12 s
+  Generation speed: 89.63 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:57] User 9, Request 14, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 168.30 ms
+  TPOT: 9.00 ms
+  ITL: 10.59 ms
+  Total generation time: 1.06 s
+  Generation speed: 94.39 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:57] User 12, Request 10, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 818.24 ms
+  TPOT: 33.62 ms
+  ITL: 41.46 ms
+  Total generation time: 4.15 s
+  Generation speed: 24.12 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:58] User 13, Request 9, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 167.19 ms
+  TPOT: 10.64 ms
+  ITL: 12.20 ms
+  Total generation time: 1.22 s
+  Generation speed: 81.94 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:58] User 16, Request 5, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 874.10 ms
+  TPOT: 33.80 ms
+  ITL: 42.20 ms
+  Total generation time: 4.22 s
+  Generation speed: 23.70 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:59] User 17, Request 4, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 192.44 ms
+  TPOT: 9.02 ms
+  ITL: 10.86 ms
+  Total generation time: 1.09 s
+  Generation speed: 92.10 tokens/s
+---------------------------------------------------
+[2025-05-22 12:04:59] User 5, Request 19, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 872.22 ms
+  TPOT: 34.03 ms
+  ITL: 42.41 ms
+  Total generation time: 4.24 s
+  Generation speed: 23.58 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:00] User 6, Request 18, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 180.97 ms
+  TPOT: 10.85 ms
+  ITL: 12.55 ms
+  Total generation time: 1.26 s
+  Generation speed: 79.66 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:00] User 9, Request 14, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 872.37 ms
+  TPOT: 27.81 ms
+  ITL: 36.26 ms
+  Total generation time: 3.63 s
+  Generation speed: 27.58 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:00] User 13, Request 9, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 879.51 ms
+  TPOT: 21.04 ms
+  ITL: 29.63 ms
+  Total generation time: 2.96 s
+  Generation speed: 33.75 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:01] User 17, Request 4, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 923.65 ms
+  TPOT: 13.40 ms
+  ITL: 22.50 ms
+  Total generation time: 2.25 s
+  Generation speed: 44.44 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:01] User 10, Request 13, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 186.47 ms
+  TPOT: 9.45 ms
+  ITL: 11.22 ms
+  Total generation time: 1.12 s
+  Generation speed: 89.12 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:01] User 6, Request 18, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 920.78 ms
+  TPOT: 6.67 ms
+  ITL: 15.81 ms
+  Total generation time: 1.58 s
+  Generation speed: 63.26 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:02] User 14, Request 8, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 185.44 ms
+  TPOT: 10.70 ms
+  ITL: 12.45 ms
+  Total generation time: 1.24 s
+  Generation speed: 80.34 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:03] User 18, Request 3, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 228.95 ms
+  TPOT: 10.75 ms
+  ITL: 12.93 ms
+  Total generation time: 1.29 s
+  Generation speed: 77.34 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:04] User 7, Request 17, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 232.74 ms
+  TPOT: 10.86 ms
+  ITL: 13.08 ms
+  Total generation time: 1.31 s
+  Generation speed: 76.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:04] User 10, Request 13, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 823.52 ms
+  TPOT: 33.38 ms
+  ITL: 41.28 ms
+  Total generation time: 4.13 s
+  Generation speed: 24.22 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:05] User 11, Request 12, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 221.12 ms
+  TPOT: 9.06 ms
+  ITL: 11.18 ms
+  Total generation time: 1.12 s
+  Generation speed: 89.41 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:05] User 14, Request 8, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 874.89 ms
+  TPOT: 27.02 ms
+  ITL: 35.50 ms
+  Total generation time: 3.55 s
+  Generation speed: 28.17 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:05] User 18, Request 3, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 872.89 ms
+  TPOT: 21.07 ms
+  ITL: 29.59 ms
+  Total generation time: 2.96 s
+  Generation speed: 33.79 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:06] User 15, Request 7, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 219.39 ms
+  TPOT: 10.33 ms
+  ITL: 12.42 ms
+  Total generation time: 1.24 s
+  Generation speed: 80.52 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:06] User 7, Request 17, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 874.48 ms
+  TPOT: 19.77 ms
+  ITL: 28.32 ms
+  Total generation time: 2.83 s
+  Generation speed: 35.31 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:07] User 15, Request 7, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 822.95 ms
+  TPOT: 6.88 ms
+  ITL: 15.04 ms
+  Total generation time: 1.50 s
+  Generation speed: 66.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:07] User 19, Request 2, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 224.65 ms
+  TPOT: 8.93 ms
+  ITL: 11.09 ms
+  Total generation time: 1.11 s
+  Generation speed: 90.19 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:07] User 11, Request 12, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 877.81 ms
+  TPOT: 18.00 ms
+  ITL: 26.60 ms
+  Total generation time: 2.66 s
+  Generation speed: 37.59 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:08] User 8, Request 16, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 222.56 ms
+  TPOT: 10.23 ms
+  ITL: 12.35 ms
+  Total generation time: 1.24 s
+  Generation speed: 80.95 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:09] User 12, Request 11, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 220.44 ms
+  TPOT: 10.82 ms
+  ITL: 12.91 ms
+  Total generation time: 1.29 s
+  Generation speed: 77.45 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:09] User 19, Request 2, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 871.95 ms
+  TPOT: 19.80 ms
+  ITL: 28.32 ms
+  Total generation time: 2.83 s
+  Generation speed: 35.31 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:09] User 8, Request 16, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 869.80 ms
+  TPOT: 13.71 ms
+  ITL: 22.27 ms
+  Total generation time: 2.23 s
+  Generation speed: 44.91 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:10] User 12, Request 11, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 876.40 ms
+  TPOT: 7.21 ms
+  ITL: 15.90 ms
+  Total generation time: 1.59 s
+  Generation speed: 62.90 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:10] User 16, Request 6, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 221.70 ms
+  TPOT: 10.89 ms
+  ITL: 13.00 ms
+  Total generation time: 1.30 s
+  Generation speed: 76.92 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:11] User 5, Request 20, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 231.24 ms
+  TPOT: 8.98 ms
+  ITL: 11.21 ms
+  Total generation time: 1.12 s
+  Generation speed: 89.24 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:11] User 20, Request 1, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 798.03 ms
+  TPOT: 5.64 ms
+  ITL: 13.56 ms
+  Total generation time: 1.36 s
+  Generation speed: 73.73 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:12] User 9, Request 15, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 220.27 ms
+  TPOT: 10.19 ms
+  ITL: 12.29 ms
+  Total generation time: 1.23 s
+  Generation speed: 81.38 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:12] User 16, Request 6, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 822.17 ms
+  TPOT: 20.80 ms
+  ITL: 28.81 ms
+  Total generation time: 2.88 s
+  Generation speed: 34.71 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:12] User 20, Request 1, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 929.27 ms
+  TPOT: 13.03 ms
+  ITL: 22.19 ms
+  Total generation time: 2.22 s
+  Generation speed: 45.07 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     31        
+Benchmark duration (s):                  29.66      
+Total input tokens:                      661679    
+Total generated tokens:                  3100      
+Request throughput (req/s):              1.05      
+Output token throughput (tok/s):         104.52    
+Total Token throughput (tok/s):          22413.27    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          908.51     
+Median TTFT (ms):                        872.22     
+P99 TTFT (ms):                           1601.57     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          17.13     
+Median TPOT (ms):                        13.92     
+P99 TPOT (ms):                           33.96     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           26.04     
+Median ITL (ms):                         22.50     
+P99 ITL (ms):                            42.35     
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     32        
+Benchmark duration (s):                  29.41      
+Total input tokens:                      683237    
+Total generated tokens:                  3200      
+Request throughput (req/s):              1.09      
+Output token throughput (tok/s):         108.82    
+Total Token throughput (tok/s):          23342.56    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          218.44     
+Median TTFT (ms):                        186.83     
+P99 TTFT (ms):                           640.44     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          10.14     
+Median TPOT (ms):                        10.48     
+P99 TPOT (ms):                           11.57     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           12.22     
+Median ITL (ms):                         12.50     
+P99 ITL (ms):                            13.47     
+[2025-05-22 12:05:13] User 5, Request 20, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 1697.06 ms
+  TPOT: 0.11 ms
+  ITL: 17.08 ms
+  Total generation time: 1.71 s
+  Generation speed: 58.56 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:13] User 13, Request 10, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 223.26 ms
+  TPOT: 10.04 ms
+  ITL: 12.17 ms
+  Total generation time: 1.22 s
+  Generation speed: 82.14 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:13] User 9, Request 15, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 821.26 ms
+  TPOT: 14.07 ms
+  ITL: 22.14 ms
+  Total generation time: 2.21 s
+  Generation speed: 45.16 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:14] User 17, Request 5, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 204.06 ms
+  TPOT: 8.77 ms
+  ITL: 10.72 ms
+  Total generation time: 1.07 s
+  Generation speed: 93.25 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:14] User 13, Request 10, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 874.80 ms
+  TPOT: 13.45 ms
+  ITL: 22.07 ms
+  Total generation time: 2.21 s
+  Generation speed: 45.31 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:15] User 6, Request 19, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 187.87 ms
+  TPOT: 10.55 ms
+  ITL: 12.32 ms
+  Total generation time: 1.23 s
+  Generation speed: 81.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:16] User 10, Request 14, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 182.71 ms
+  TPOT: 9.29 ms
+  ITL: 11.02 ms
+  Total generation time: 1.10 s
+  Generation speed: 90.73 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:16] User 6, Request 19, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 873.80 ms
+  TPOT: 6.49 ms
+  ITL: 15.17 ms
+  Total generation time: 1.52 s
+  Generation speed: 65.93 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:16] User 17, Request 5, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 869.76 ms
+  TPOT: 19.57 ms
+  ITL: 28.07 ms
+  Total generation time: 2.81 s
+  Generation speed: 35.62 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:17] User 14, Request 9, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 189.43 ms
+  TPOT: 10.54 ms
+  ITL: 12.33 ms
+  Total generation time: 1.23 s
+  Generation speed: 81.10 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:18] User 18, Request 4, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 223.73 ms
+  TPOT: 10.87 ms
+  ITL: 13.00 ms
+  Total generation time: 1.30 s
+  Generation speed: 76.93 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:18] User 10, Request 14, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 873.73 ms
+  TPOT: 20.32 ms
+  ITL: 28.85 ms
+  Total generation time: 2.88 s
+  Generation speed: 34.66 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:18] User 14, Request 9, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 870.89 ms
+  TPOT: 14.00 ms
+  ITL: 22.56 ms
+  Total generation time: 2.26 s
+  Generation speed: 44.32 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:19] User 18, Request 4, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 872.72 ms
+  TPOT: 7.35 ms
+  ITL: 16.00 ms
+  Total generation time: 1.60 s
+  Generation speed: 62.50 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:19] User 7, Request 18, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 192.86 ms
+  TPOT: 11.47 ms
+  ITL: 13.28 ms
+  Total generation time: 1.33 s
+  Generation speed: 75.27 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:20] User 11, Request 13, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 192.57 ms
+  TPOT: 9.42 ms
+  ITL: 11.25 ms
+  Total generation time: 1.13 s
+  Generation speed: 88.88 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:20] User 7, Request 18, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 823.41 ms
+  TPOT: 14.63 ms
+  ITL: 22.72 ms
+  Total generation time: 2.27 s
+  Generation speed: 44.01 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:21] User 15, Request 8, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 183.95 ms
+  TPOT: 10.61 ms
+  ITL: 12.35 ms
+  Total generation time: 1.23 s
+  Generation speed: 81.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:21] User 11, Request 13, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 875.05 ms
+  TPOT: 7.49 ms
+  ITL: 16.16 ms
+  Total generation time: 1.62 s
+  Generation speed: 61.86 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:22] User 19, Request 3, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 221.35 ms
+  TPOT: 8.81 ms
+  ITL: 10.93 ms
+  Total generation time: 1.09 s
+  Generation speed: 91.48 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:22] User 15, Request 8, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 871.21 ms
+  TPOT: 13.02 ms
+  ITL: 21.61 ms
+  Total generation time: 2.16 s
+  Generation speed: 46.28 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:23] User 19, Request 3, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 876.98 ms
+  TPOT: 6.69 ms
+  ITL: 15.39 ms
+  Total generation time: 1.54 s
+  Generation speed: 64.98 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:23] User 8, Request 17, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 186.78 ms
+  TPOT: 10.78 ms
+  ITL: 12.54 ms
+  Total generation time: 1.25 s
+  Generation speed: 79.72 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:24] User 12, Request 12, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 188.16 ms
+  TPOT: 11.31 ms
+  ITL: 13.08 ms
+  Total generation time: 1.31 s
+  Generation speed: 76.44 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:25] User 16, Request 7, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 192.33 ms
+  TPOT: 9.45 ms
+  ITL: 11.28 ms
+  Total generation time: 1.13 s
+  Generation speed: 88.67 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:25] User 8, Request 17, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 822.67 ms
+  TPOT: 20.91 ms
+  ITL: 28.93 ms
+  Total generation time: 2.89 s
+  Generation speed: 34.57 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:26] User 20, Request 2, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 215.46 ms
+  TPOT: 10.32 ms
+  ITL: 12.37 ms
+  Total generation time: 1.24 s
+  Generation speed: 80.86 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:26] User 12, Request 12, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 872.46 ms
+  TPOT: 17.40 ms
+  ITL: 25.95 ms
+  Total generation time: 2.60 s
+  Generation speed: 38.53 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:27] User 9, Request 16, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 186.25 ms
+  TPOT: 9.29 ms
+  ITL: 11.06 ms
+  Total generation time: 1.11 s
+  Generation speed: 90.39 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:27] User 20, Request 2, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 821.41 ms
+  TPOT: 6.82 ms
+  ITL: 14.97 ms
+  Total generation time: 1.50 s
+  Generation speed: 66.81 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:27] User 16, Request 7, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 872.79 ms
+  TPOT: 17.46 ms
+  ITL: 26.02 ms
+  Total generation time: 2.60 s
+  Generation speed: 38.44 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:28] User 13, Request 11, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 183.84 ms
+  TPOT: 10.24 ms
+  ITL: 11.98 ms
+  Total generation time: 1.20 s
+  Generation speed: 83.47 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:28] User 9, Request 16, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 874.47 ms
+  TPOT: 13.76 ms
+  ITL: 22.36 ms
+  Total generation time: 2.24 s
+  Generation speed: 44.71 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:29] User 13, Request 11, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 870.32 ms
+  TPOT: 7.39 ms
+  ITL: 16.02 ms
+  Total generation time: 1.60 s
+  Generation speed: 62.42 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:30] User 17, Request 6, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 191.64 ms
+  TPOT: 17.31 ms
+  ITL: 19.05 ms
+  Total generation time: 1.90 s
+  Generation speed: 52.49 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:30] User 6, Request 20, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 186.22 ms
+  TPOT: 11.48 ms
+  ITL: 13.23 ms
+  Total generation time: 1.32 s
+  Generation speed: 75.59 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:30] User 21, Request 1, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 805.37 ms
+  TPOT: 3.48 ms
+  ITL: 11.49 ms
+  Total generation time: 1.15 s
+  Generation speed: 87.00 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:31] User 10, Request 15, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 194.43 ms
+  TPOT: 9.43 ms
+  ITL: 11.28 ms
+  Total generation time: 1.13 s
+  Generation speed: 88.62 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:31] User 17, Request 6, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 823.49 ms
+  TPOT: 21.15 ms
+  ITL: 29.18 ms
+  Total generation time: 2.92 s
+  Generation speed: 34.27 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:32] User 6, Request 20, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 930.21 ms
+  TPOT: 13.04 ms
+  ITL: 22.21 ms
+  Total generation time: 2.22 s
+  Generation speed: 45.02 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:32] User 21, Request 1, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 1689.28 ms
+  TPOT: -0.77 ms
+  ITL: 16.13 ms
+  Total generation time: 1.61 s
+  Generation speed: 61.98 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:32] User 14, Request 10, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 185.72 ms
+  TPOT: 10.74 ms
+  ITL: 12.49 ms
+  Total generation time: 1.25 s
+  Generation speed: 80.09 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:33] User 18, Request 5, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 194.68 ms
+  TPOT: 11.17 ms
+  ITL: 13.00 ms
+  Total generation time: 1.30 s
+  Generation speed: 76.91 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:33] User 10, Request 15, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 822.22 ms
+  TPOT: 20.82 ms
+  ITL: 28.83 ms
+  Total generation time: 2.88 s
+  Generation speed: 34.68 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:34] User 14, Request 10, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 872.78 ms
+  TPOT: 14.05 ms
+  ITL: 22.64 ms
+  Total generation time: 2.26 s
+  Generation speed: 44.18 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:34] User 18, Request 5, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 872.52 ms
+  TPOT: 7.44 ms
+  ITL: 16.09 ms
+  Total generation time: 1.61 s
+  Generation speed: 62.14 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:34] User 7, Request 19, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 188.79 ms
+  TPOT: 11.28 ms
+  ITL: 13.05 ms
+  Total generation time: 1.31 s
+  Generation speed: 76.61 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:35] User 11, Request 14, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 191.79 ms
+  TPOT: 9.47 ms
+  ITL: 11.30 ms
+  Total generation time: 1.13 s
+  Generation speed: 88.53 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:36] User 15, Request 9, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 183.92 ms
+  TPOT: 10.70 ms
+  ITL: 12.43 ms
+  Total generation time: 1.24 s
+  Generation speed: 80.45 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:36] User 7, Request 19, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 873.75 ms
+  TPOT: 20.10 ms
+  ITL: 28.64 ms
+  Total generation time: 2.86 s
+  Generation speed: 34.92 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:37] User 11, Request 14, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 872.38 ms
+  TPOT: 14.11 ms
+  ITL: 22.69 ms
+  Total generation time: 2.27 s
+  Generation speed: 44.08 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:37] User 19, Request 4, Endpoint ProductionStack
+  Prompt tokens: 21460
+  Generation tokens: 100
+  TTFT: 225.29 ms
+  TPOT: 8.87 ms
+  ITL: 11.04 ms
+  Total generation time: 1.10 s
+  Generation speed: 90.62 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:37] User 15, Request 9, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 872.54 ms
+  TPOT: 7.41 ms
+  ITL: 16.06 ms
+  Total generation time: 1.61 s
+  Generation speed: 62.28 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:38] User 8, Request 18, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 185.24 ms
+  TPOT: 10.85 ms
+  ITL: 12.60 ms
+  Total generation time: 1.26 s
+  Generation speed: 79.39 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:38] User 19, Request 4, Endpoint RayServe
+  Prompt tokens: 21461
+  Generation tokens: 100
+  TTFT: 820.80 ms
+  TPOT: 14.21 ms
+  ITL: 22.27 ms
+  Total generation time: 2.23 s
+  Generation speed: 44.90 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:39] User 8, Request 18, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 873.20 ms
+  TPOT: 7.26 ms
+  ITL: 15.92 ms
+  Total generation time: 1.59 s
+  Generation speed: 62.81 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:39] User 12, Request 13, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 192.66 ms
+  TPOT: 11.25 ms
+  ITL: 13.06 ms
+  Total generation time: 1.31 s
+  Generation speed: 76.54 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:40] User 16, Request 8, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 181.69 ms
+  TPOT: 9.53 ms
+  ITL: 11.26 ms
+  Total generation time: 1.13 s
+  Generation speed: 88.84 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:41] User 20, Request 3, Endpoint ProductionStack
+  Prompt tokens: 21331
+  Generation tokens: 100
+  TTFT: 224.88 ms
+  TPOT: 10.33 ms
+  ITL: 12.47 ms
+  Total generation time: 1.25 s
+  Generation speed: 80.16 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:41] User 12, Request 13, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 872.13 ms
+  TPOT: 19.84 ms
+  ITL: 28.36 ms
+  Total generation time: 2.84 s
+  Generation speed: 35.26 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:42] User 16, Request 8, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 875.45 ms
+  TPOT: 13.75 ms
+  ITL: 22.37 ms
+  Total generation time: 2.24 s
+  Generation speed: 44.70 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:42] User 9, Request 17, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 183.39 ms
+  TPOT: 9.49 ms
+  ITL: 11.23 ms
+  Total generation time: 1.12 s
+  Generation speed: 89.07 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:42] User 20, Request 3, Endpoint RayServe
+  Prompt tokens: 21332
+  Generation tokens: 100
+  TTFT: 875.70 ms
+  TPOT: 7.06 ms
+  ITL: 15.75 ms
+  Total generation time: 1.58 s
+  Generation speed: 63.49 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     32        
+Benchmark duration (s):                  29.31      
+Total input tokens:                      690106    
+Total generated tokens:                  3200      
+Request throughput (req/s):              1.09      
+Output token throughput (tok/s):         109.19    
+Total Token throughput (tok/s):          23656.59    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          915.04     
+Median TTFT (ms):                        872.63     
+P99 TTFT (ms):                           1694.65     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          12.51     
+Median TPOT (ms):                        13.76     
+P99 TPOT (ms):                           21.08     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           21.54     
+Median ITL (ms):                         22.24     
+P99 ITL (ms):                            29.10     
+[2025-05-22 12:05:43] User 13, Request 12, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 185.05 ms
+  TPOT: 9.36 ms
+  ITL: 11.12 ms
+  Total generation time: 1.11 s
+  Generation speed: 89.93 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     31        
+Benchmark duration (s):                  29.16      
+Total input tokens:                      668872    
+Total generated tokens:                  3100      
+Request throughput (req/s):              1.06      
+Output token throughput (tok/s):         106.30    
+Total Token throughput (tok/s):          23042.69    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          215.17     
+Median TTFT (ms):                        191.64     
+P99 TTFT (ms):                           631.35     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          10.23     
+Median TPOT (ms):                        10.33     
+P99 TPOT (ms):                           15.56     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           12.28     
+Median ITL (ms):                         12.33     
+P99 ITL (ms):                            17.32     
+[2025-05-22 12:05:44] User 17, Request 7, Endpoint ProductionStack
+  Prompt tokens: 21847
+  Generation tokens: 100
+  TTFT: 192.72 ms
+  TPOT: 11.15 ms
+  ITL: 12.97 ms
+  Total generation time: 1.30 s
+  Generation speed: 77.11 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:45] User 9, Request 17, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 821.23 ms
+  TPOT: 26.98 ms
+  ITL: 34.93 ms
+  Total generation time: 3.49 s
+  Generation speed: 28.63 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:45] User 21, Request 2, Endpoint ProductionStack
+  Prompt tokens: 21202
+  Generation tokens: 100
+  TTFT: 224.25 ms
+  TPOT: 9.55 ms
+  ITL: 11.70 ms
+  Total generation time: 1.17 s
+  Generation speed: 85.49 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:45] User 13, Request 12, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 875.84 ms
+  TPOT: 20.42 ms
+  ITL: 28.98 ms
+  Total generation time: 2.90 s
+  Generation speed: 34.51 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:46] User 10, Request 16, Endpoint ProductionStack
+  Prompt tokens: 21847
+  Generation tokens: 100
+  TTFT: 189.27 ms
+  TPOT: 9.00 ms
+  ITL: 10.80 ms
+  Total generation time: 1.08 s
+  Generation speed: 92.59 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:46] User 17, Request 7, Endpoint RayServe
+  Prompt tokens: 21848
+  Generation tokens: 100
+  TTFT: 921.90 ms
+  TPOT: 13.13 ms
+  ITL: 22.22 ms
+  Total generation time: 2.22 s
+  Generation speed: 45.01 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:46] User 21, Request 2, Endpoint RayServe
+  Prompt tokens: 21203
+  Generation tokens: 100
+  TTFT: 973.90 ms
+  TPOT: 6.76 ms
+  ITL: 16.43 ms
+  Total generation time: 1.64 s
+  Generation speed: 60.86 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:47] User 14, Request 11, Endpoint ProductionStack
+  Prompt tokens: 21847
+  Generation tokens: 100
+  TTFT: 192.52 ms
+  TPOT: 10.78 ms
+  ITL: 12.60 ms
+  Total generation time: 1.26 s
+  Generation speed: 79.36 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:48] User 10, Request 16, Endpoint RayServe
+  Prompt tokens: 21848
+  Generation tokens: 100
+  TTFT: 873.53 ms
+  TPOT: 14.88 ms
+  ITL: 23.46 ms
+  Total generation time: 2.35 s
+  Generation speed: 42.62 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:49] User 18, Request 6, Endpoint ProductionStack
+  Prompt tokens: 21718
+  Generation tokens: 100
+  TTFT: 188.43 ms
+  TPOT: 21.04 ms
+  ITL: 22.71 ms
+  Total generation time: 2.27 s
+  Generation speed: 44.03 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:49] User 14, Request 11, Endpoint RayServe
+  Prompt tokens: 21848
+  Generation tokens: 100
+  TTFT: 870.63 ms
+  TPOT: 20.40 ms
+  ITL: 28.90 ms
+  Total generation time: 2.89 s
+  Generation speed: 34.60 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:49] User 18, Request 6, Endpoint RayServe
+  Prompt tokens: 21719
+  Generation tokens: 100
+  TTFT: 823.28 ms
+  TPOT: 13.77 ms
+  ITL: 21.87 ms
+  Total generation time: 2.19 s
+  Generation speed: 45.73 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:50] User 22, Request 1, Endpoint ProductionStack
+  Prompt tokens: 21073
+  Generation tokens: 100
+  TTFT: 939.49 ms
+  TPOT: 4.58 ms
+  ITL: 13.93 ms
+  Total generation time: 1.39 s
+  Generation speed: 71.80 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:50] User 7, Request 20, Endpoint ProductionStack
+  Prompt tokens: 21847
+  Generation tokens: 100
+  TTFT: 932.58 ms
+  TPOT: 4.78 ms
+  ITL: 14.06 ms
+  Total generation time: 1.41 s
+  Generation speed: 71.11 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:50] User 11, Request 15, Endpoint ProductionStack
+  Prompt tokens: 21847
+  Generation tokens: 100
+  TTFT: 198.25 ms
+  TPOT: 10.60 ms
+  ITL: 12.47 ms
+  Total generation time: 1.25 s
+  Generation speed: 80.17 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:51] User 15, Request 10, Endpoint ProductionStack
+  Prompt tokens: 21847
+  Generation tokens: 100
+  TTFT: 188.33 ms
+  TPOT: 10.81 ms
+  ITL: 12.59 ms
+  Total generation time: 1.26 s
+  Generation speed: 79.45 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:51] User 11, Request 15, Endpoint RayServe
+  Prompt tokens: 21848
+  Generation tokens: 100
+  TTFT: 872.86 ms
+  TPOT: 7.15 ms
+  ITL: 15.81 ms
+  Total generation time: 1.58 s
+  Generation speed: 63.26 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:52] User 19, Request 5, Endpoint ProductionStack
+  Prompt tokens: 21589
+  Generation tokens: 100
+  TTFT: 194.42 ms
+  TPOT: 9.33 ms
+  ITL: 11.19 ms
+  Total generation time: 1.12 s
+  Generation speed: 89.40 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:52] User 7, Request 20, Endpoint RayServe
+  Prompt tokens: 21848
+  Generation tokens: 100
+  TTFT: 928.90 ms
+  TPOT: 26.53 ms
+  ITL: 35.56 ms
+  Total generation time: 3.56 s
+  Generation speed: 28.12 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:52] User 22, Request 1, Endpoint RayServe
+  Prompt tokens: 21074
+  Generation tokens: 100
+  TTFT: 1687.96 ms
+  TPOT: 12.84 ms
+  ITL: 29.59 ms
+  Total generation time: 2.96 s
+  Generation speed: 33.79 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:53] User 15, Request 10, Endpoint RayServe
+  Prompt tokens: 21848
+  Generation tokens: 100
+  TTFT: 922.09 ms
+  TPOT: 13.65 ms
+  ITL: 22.74 ms
+  Total generation time: 2.27 s
+  Generation speed: 43.98 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:53] User 8, Request 19, Endpoint ProductionStack
+  Prompt tokens: 21847
+  Generation tokens: 100
+  TTFT: 189.73 ms
+  TPOT: 8.84 ms
+  ITL: 10.65 ms
+  Total generation time: 1.06 s
+  Generation speed: 93.92 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:53] User 19, Request 5, Endpoint RayServe
+  Prompt tokens: 21590
+  Generation tokens: 100
+  TTFT: 920.43 ms
+  TPOT: 6.69 ms
+  ITL: 15.82 ms
+  Total generation time: 1.58 s
+  Generation speed: 63.20 tokens/s
+---------------------------------------------------
+[2025-05-22 12:05:54] User 8, Request 19, Endpoint RayServe
+  Prompt tokens: 21848
+  Generation tokens: 100
+  TTFT: 825.71 ms
+  TPOT: 7.05 ms
+  ITL: 15.23 ms
+  Total generation time: 1.52 s
+  Generation speed: 65.65 tokens/s
+---------------------------------------------------
+
+=========== Endpoint: RayServe Benchmark Result ===========
+Successful requests:                     105       
+Benchmark duration (s):                  101.58      
+Total input tokens:                      2246439   
+Total generated tokens:                  10500     
+Request throughput (req/s):              1.03      
+Output token throughput (tok/s):         103.37    
+Total Token throughput (tok/s):          22218.29    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          907.13     
+Median TTFT (ms):                        872.18     
+P99 TTFT (ms):                           1689.23     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          14.41     
+Median TPOT (ms):                        13.65     
+P99 TPOT (ms):                           33.79     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           23.34     
+Median ITL (ms):                         22.16     
+P99 ITL (ms):                            42.17     
+
+=========== Endpoint: ProductionStack Benchmark Result ===========
+Successful requests:                     105       
+Benchmark duration (s):                  100.48      
+Total input tokens:                      2246334   
+Total generated tokens:                  10500     
+Request throughput (req/s):              1.04      
+Output token throughput (tok/s):         104.50    
+Total Token throughput (tok/s):          22459.99    
+---------------Time to First Token----------------
+Mean TTFT (ms):                          221.42     
+Median TTFT (ms):                        189.43     
+P99 TTFT (ms):                           927.49     
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          10.14     
+Median TPOT (ms):                        10.33     
+P99 TPOT (ms):                           17.08     
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           12.25     
+Median ITL (ms):                         12.35     
+P99 ITL (ms):                            18.85     
+
+
+=======================================================
+FINAL COMPARISON SUMMARY (QPS: 1.0)
+=======================================================
+
+Key Performance Comparison:
+ProductionStack TTFT: 221.42 ms | RayServe TTFT: 907.13 ms
+Difference: -685.72 ms (-75.59%)
+
+ProductionStack ITL: 12.25 ms | RayServe ITL: 23.34 ms
+Difference: -11.09 ms (-47.50%)
+
+Test completed at: 2025-05-22 12:05:54

@@ -1,0 +1,42 @@
+servingEngineSpec:
+  runtimeClassName: ""
+  modelSpec:
+  - name: "vllm-lmcache-engine"
+    repository: "lmcache/vllm-openai"
+    tag: "latest"
+    modelURL: "meta-llama/Llama-3.1-8B-Instruct"
+    replicaCount: 2
+    requestCPU: 10
+    requestMemory: "180Gi"
+    requestGPU: 1
+    pvcStorage: "180Gi" # use 180/200 GB of the gpu node pool (need to change later when more than 1 serving engine)
+    pvcAccessMode:
+      - ReadWriteOnce
+    vllmConfig:
+      enablePrefixCaching: false # new for v1
+      maxModelLen: 32000
+      dtype: "bfloat16"
+      gpuMemoryUtilization: "0.95" # new for v1
+      extraArgs: ["--disable-log-requests", "--swap-space", 0]
+      tensorParallelSize: 1
+    lmcacheConfig:
+      enabled: true
+      cpuOffloadingBufferSize: "140"
+    hf_token: "<YOUR_HF_TOKEN>"
+    shmSize: "20Gi"
+
+
+routerSpec:
+  repository: "lmcache/fault_tolerance_router"
+  tag: "latest"
+  resources:
+    requests:
+      cpu: "2"
+      memory: "8G"
+    limits:
+      cpu: "2"
+      memory: "8G"
+  routingLogic: "session"
+  sessionKey: "x-user-id"
+
+
