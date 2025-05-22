@@ -6,25 +6,25 @@ Demonstrate the TTFT and ITL benefits of Production Stack + LMCache in Multi-Rou
 
 Compare Production Stack with Ray Serve by Running them Side-by-Side
 
-### Setting up Production Stack (Simple Helm Deployment)
+### 1a. Setting up Production Stack (Simple Helm Deployment)
 
 See `production-stack/DEPLOY.md`
 
 This will yield production stack set of serving engines on `localhost:30080/v1/chat/completions`.
 
-### Setting up RayServe (Simple Deployment)
+### 1b. Setting up RayServe (Simple Deployment)
 
 See `ray-serve/DEPLOY.md`
 
 This will yield ray serve set of serving engines on `localhost:30081/v1/chat/completions`
 
-### Running the Comparison Benchmark
+### 2. Running the Comparison Benchmark on Multi-User RAG QA
 
-multi-round-qa.py script queries both endpoints simultaneously and generates comparison metrics.
+`multi-round-qa.py` script queries both endpoints simultaneously and generates comparison metrics.
 
 To run the comparison:
 
-Long Input (33000 tok w/ 3000 System Prompt and 30000 User Conversation History) Short Output (200 tok) is a good approximation of RAG QA.
+Long Input (30000 tok w/ 3000 System Prompt and 30000 User Conversation History) Short Output (200 tok) is a good approximation of RAG QA.
 
 ```bash
 cd workload-generator
@@ -48,10 +48,12 @@ For each QPS value, you'll find:
 The real-time stats file shows the differences in Time to First Token (TTFT) and Inter-token Latency (ITL) between the two endpoints, both of which are critical metrics for perceived responsiveness in multi-round QA scenarios.
 
 
-### Real-Time Live Interactive Demo
+### 3. Real-Time Live Interactive Demo
 
+See `live-querying/README.md`. This will spin up a streamlit Web UI that lets you test queries
+with conversation history as a single user. You will see improvement but keep in mind that the multi-user case is where Production Stack and LMCache really shine.
 
-### Fault Tolerance of Production Stack
+### 4. Fault Tolerance of Production Stack
 
 In this section we will demonstrate the fault tolerance of production stack.
 
