@@ -178,26 +178,6 @@ with metrics_cols[1]:
     else:
         st.metric("Ray Serve TTFT", "N/A")
 
-# Add a button to show the context information
-with st.expander("About this performance test"):
-    st.write("""
-    ### How this performance test works:
-
-    1. **Long Context Loading**: Seven full documentation files are loaded into both LLM engines' context windows
-    2. **Massive Context Size**: The combined size of all docs is over 1.7MB of text (approximately 450,000 tokens)
-    3. **Conversation History**: A 5-round conversation about the documentation is pre-loaded to both endpoints
-    4. **Full Context Persistence**: All messages and documentation are sent to the backend to ensure context is preserved
-    5. **Caching Benefits**: This allows the Production Stack to benefit from its context caching capabilities
-    6. **Simultaneous Queries**: When you ask a question, it's sent to both endpoints at exactly the same time
-    7. **User ID Tracking**: A custom x-user-id: 0 header is sent to enable user-specific optimizations
-    8. **Streaming Responses**: You can watch in real-time which endpoint responds faster
-
-    ### What to look for:
-
-    - **Time to First Token (TTFT)**: How quickly does the first token appear? Lower is better.
-    - **Overall Smoothness**: Which endpoint generates text more consistently?
-    """)
-
 # Display chart if we have metrics history
 metrics_comparison = st.session_state.dual_session.get_metrics_comparison()
 if metrics_comparison:
@@ -206,23 +186,8 @@ if metrics_comparison:
     for i, diff in enumerate(metrics_comparison["ttft_diff_history"]):
         ttft_data.append({"index": i, "value": diff, "metric": "TTFT Difference (ms)"})
 
-    all_data = pd.DataFrame(ttft_data)
-
-    if not all_data.empty:
-        # Create two charts
-        ttft_chart = alt.Chart(pd.DataFrame(ttft_data)).mark_line(point=True).encode(
-            x=alt.X('index:O', title='Message Index'),
-            y=alt.Y('value:Q', title='TTFT Difference (ms)'),
-            tooltip=['index:O', 'value:Q']
-        ).properties(
-            title='TTFT Difference Over Time (Production Stack - Ray Serve)',
-            height=200
-        )
-
-        st.altair_chart(ttft_chart, use_container_width=True)
-
-        # Add summary statistics
-        st.write(f"Average TTFT Difference: {metrics_comparison['avg_ttft_diff']:.2f} ms")
+    # Add summary statistics
+    st.write(f"Average TTFT Difference: {metrics_comparison['avg_ttft_diff']:.2f} ms")
 
 # Display the chat history
 for i, message in enumerate(st.session_state.history):
@@ -271,45 +236,57 @@ def process_user_input(prompt):
     with rs_container:
         rs_placeholder = st.chat_message("assistant").empty()
 
-    # Process both streams
+    # Initialize message strings
     ps_message = ""
     rs_message = ""
 
-    # Process the Production Stack stream
-    for chunk in ps_stream:
-        # Check if this is a metric chunk
-        if chunk.startswith("<metric:"):
-            print(f"Skipping metric chunk in frontend: {chunk}")
-            continue
+    # Create iterators from the generators
+    ps_iterator = iter(ps_stream)
+    rs_iterator = iter(rs_stream)
 
-        ps_message += chunk
-        ps_placeholder.markdown(ps_message + "▌")
+    # Track whether each stream is complete
+    ps_complete = False
+    rs_complete = False
 
-    # Update final message
-    ps_placeholder.markdown(ps_message)
+    # Process both streams by alternating between them
+    while not (ps_complete and rs_complete):
+        # Process a chunk from Production Stack
+        if not ps_complete:
+            try:
+                for _ in range(5):  # Process small batches at a time
+                    chunk = next(ps_iterator)
+                    if chunk.startswith("<metric:"):
+                        print(f"Skipping metric chunk in frontend: {chunk}")
+                        continue
+                    ps_message += chunk
+                    ps_placeholder.markdown(ps_message + "▌")
+            except StopIteration:
+                # Stream is complete
+                ps_complete = True
+                ps_placeholder.markdown(ps_message)
+                st.session_state.ps_processing = False
 
-    # Process the Ray Serve stream
-    for chunk in rs_stream:
-        # Check if this is a metric chunk
-        if chunk.startswith("<metric:"):
-            print(f"Skipping metric chunk in frontend: {chunk}")
-            continue
-
-        rs_message += chunk
-        rs_placeholder.markdown(rs_message + "▌")
-
-    # Update final message
-    rs_placeholder.markdown(rs_message)
+        # Process a chunk from Ray Serve
+        if not rs_complete:
+            try:
+                for _ in range(5):  # Process small batches at a time
+                    chunk = next(rs_iterator)
+                    if chunk.startswith("<metric:"):
+                        print(f"Skipping metric chunk in frontend: {chunk}")
+                        continue
+                    rs_message += chunk
+                    rs_placeholder.markdown(rs_message + "▌")
+            except StopIteration:
+                # Stream is complete
+                rs_complete = True
+                rs_placeholder.markdown(rs_message)
+                st.session_state.rs_processing = False
 
     # Print debug info about current metrics state
     print("Current metrics after processing:")
     for msg in reversed(st.session_state.history):
         if msg.get("role") == "assistant":
             print(f"  - {msg.get('endpoint', 'unknown')}: TTFT = {msg.get('metrics', {}).get('ttft')}")
-
-    # Update the processing status
-    st.session_state.ps_processing = False
-    st.session_state.rs_processing = False
 
     # Force a rerun to update metrics
     st.rerun()

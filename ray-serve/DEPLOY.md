@@ -2,6 +2,8 @@
 
 Install `requirements.txt`
 
+Change which GPUs you want to use with the CUDA_VISIBLE_DEVICES at the top.
+
 Change your replicas, accelerator_type, model_id, and model_source and HF_TOKEN in `ray-deploy.py`
 
 Do not change the 30081 port for multi-round-qa.py compatibility.

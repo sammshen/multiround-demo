@@ -1,78 +1,67 @@
-# Kubernetes Fault Tolerance Demo
+# Overview
 
-This folder contains the necessary scripts to test the fault tolerance capabilities of a vLLM Production Stack deployment running on Kubernetes.
+Demonstrate the TTFT and ITL benefits of Production Stack + LMCache in Multi-Round Long Context QA Situations.
 
-## Prerequisites
+## Example 1: Production Stack + LMCache vs Ray Serve
 
-1. A running Kubernetes cluster with the vLLM Production Stack deployed
-2. `kubectl` installed and configured to access your cluster
-3. Python 3 installed
+Compare Production Stack with Ray Serve by Running them Side-by-Side
 
-## Running the Demo
+### 1a. Setting up Production Stack (Simple Helm Deployment)
 
-To run the fault tolerance demonstration, simply execute:
+See `production-stack/DEPLOY.md`
 
-```bash
-./prod_fault_tolerance_demo.sh
-```
+This will yield production stack set of serving engines on `localhost:30080/v1/chat/completions`.
 
-This script will:
+### 1b. Setting up RayServe (Simple Deployment)
 
-1. Check if the necessary vLLM services are running
-2. Set up port forwarding to access the router service
-3. Send a test request to identify which pod is handling your session
-4. Send a longer request that will be processing for some time
-5. Kill the pod **while the request is being processed**
-6. Test if the system can recover and handle subsequent requests
+See `ray-serve/DEPLOY.md`
 
-## API Types
+This will yield ray serve set of serving engines on `localhost:30081/v1/chat/completions`
 
-You can specify which API type to use:
+### 2a. Running the Comparison Benchmark
+
+multi-round-qa.py script queries both endpoints simultaneously and generates comparison metrics.
+
+To run the comparison:
+
+Long Input (33000 tok w/ 3000 System Prompt and 30000 User Conversation History) Short Output (100 tok) is a good approximation of RAG QA.
 
 ```bash
-./prod_fault_tolerance_demo.sh chat      # For chat completions API (default)
-./prod_fault_tolerance_demo.sh completion # For completions API
+cd workload-generator
+# the "benchmark-results" is embedded into the csv filename and 1.5 and 2 are the QPS
+./long_input_short_output_run.sh meta-llama/Llama-3.1-8B-Instruct benchmark-results 1.5 2
 ```
 
-## How It Works
+This will:
+1. Send identical requests to both endpoints
+2. Capture real-time performance metrics in `real_time_stats_{qps}.txt` files
+3. Generate summary CSV files for each endpoint
+4. Provide a direct comparison of key metrics (TTFT, ITL) between the two endpoints
 
-The demo script works by:
+### Analyzing Results
 
-1. Using the session-based routing logic defined in the Production Stack
-2. Monitoring pods for activity related to a specific session ID
-3. Identifying which serving engine pod is handling requests for that session
-4. Killing that pod to see if another pod can take over
-5. Verifying that the system maintains continuity even during failures
+For each QPS value, you'll find:
+- `real_time_stats_{qps}.txt`: Contains request-by-request performance data and final comparison
+- `ProductionStack_benchmark-results_{qps}.csv`: Raw data for Production Stack endpoint
+- `RayServe_benchmark-results_{qps}.csv`: Raw data for Ray Serve endpoint
 
-## Interpreting Results
+The real-time stats file shows the differences in Time to First Token (TTFT) and Inter-token Latency (ITL) between the two endpoints, both of which are critical metrics for perceived responsiveness in multi-round QA scenarios.
 
-At the end of the test, you'll see one of these messages:
 
-- **✅ FAULT TOLERANCE SUCCESS**: The request completed successfully despite the pod being killed. This means the system properly failed over to another pod.
+### 2b. Real-Time Live Interactive Demo
 
-- **❌ FAULT TOLERANCE FAILED**: The request did not complete after the pod was killed. This means the system did not properly handle the failover.
+You should run this simultaneously with the Comparison Benchmark for a live Web UI. See `live-querying/README.md`
 
-## Troubleshooting
+### 3. Fault Tolerance of Production Stack
 
-If the fault tolerance test fails:
+In this section we will demonstrate the fault tolerance of production stack.
 
-1. Make sure you have at least 2 serving engine pods running:
-   ```bash
-   kubectl get pods | grep engine
-   ```
+First let's send a message with session-id 9999 (user 9999) to the production stack router at 30080 and see which serving engine it routed to.
 
-2. Check that port forwarding is active:
-   ```bash
-   lsof -i :30080
-   ```
+We need to remember the serving engine port so we can prepare to kill it.
 
-3. Check the router logs to see how it's handling session routing:
-   ```bash
-   kubectl logs $(kubectl get pods | grep router | awk '{print $1}') | grep session
-   ```
+Let's prompt a long response from this router with the same session-id and immediately kill the router to see how production stack deployment responds.
 
-4. If the script has trouble identifying the correct pod:
-   - Try modifying the `k8s_fault_demo.py` file to manually specify a serving engine pod
-   - Check that your router service is properly configured for session-based routing
+Let's do the same thing with Ray Serve and see that our request gets lost into the void.
 
-5. If you see failures consistently, examine your Production Stack configuration to ensure it's set up for proper fault tolerance with session persistence
+## Example 2: Production Stack + LMCache vs XXXXX (COMING SOON)

@@ -9,15 +9,15 @@ servingEngineSpec:
     requestCPU: 10
     requestMemory: "180Gi"
     requestGPU: 1
-    pvcStorage: "180Gi" # use 180/200 GB of the gpu node pool (need to change later when more than 1 serving engine)
+    pvcStorage: "180Gi"
     pvcAccessMode:
       - ReadWriteOnce
     vllmConfig:
-      enablePrefixCaching: true # new for v1
-      maxModelLen: 32000
+      v1: 1
+      maxModelLen: 30000
       dtype: "bfloat16"
-      gpuMemoryUtilization: "0.95" # new for v1
-      extraArgs: ["--disable-log-requests", "--swap-space", 0]
+      gpuMemoryUtilization: "0.92"
+      extraArgs: ["--disable-log-requests", "--swap-space", 0, "--enforce-eager"]
       tensorParallelSize: 1
     lmcacheConfig:
       enabled: true

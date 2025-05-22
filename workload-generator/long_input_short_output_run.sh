@@ -26,7 +26,7 @@ NUM_ROUNDS="${NUM_ROUNDS:-20}"
 
 SYSTEM_PROMPT="${SYSTEM_PROMPT:-3000}" # Shared system prompt length
 CHAT_HISTORY="${CHAT_HISTORY:-30000}" # User specific chat history length
-ANSWER_LEN="${ANSWER_LEN:-200}" # Generation length per round
+ANSWER_LEN="${ANSWER_LEN:-100}" # Generation length per round
 
 # init-user-id starts at 1, will add 20 each iteration
 INIT_USER_ID="${INIT_USER_ID:-1}"

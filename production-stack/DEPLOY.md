@@ -5,10 +5,10 @@ Run `minikube-setup/install-local-minikube.sh`
 Substitute your `hf_token` and desired `modelURL` in `multi-llama8B.yaml`
 Modify the number of replicas and lmcache CPU offloading memory you want in `multi-llama8B.yaml`
 
-Then run:
+Change which GPU Devices you want to use when running:
 
 ```bash
-helm-deploy.sh
+CUDA_VISIBLE_DEVICES=1,2 ./helm-deploy.sh
 ```
 
 Test that the router is up:
