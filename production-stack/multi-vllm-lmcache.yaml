@@ -13,7 +13,7 @@ servingEngineSpec:
     pvcAccessMode:
       - ReadWriteOnce
     vllmConfig:
-      enablePrefixCaching: false # new for v1
+      enablePrefixCaching: true # new for v1
       maxModelLen: 32000
       dtype: "bfloat16"
       gpuMemoryUtilization: "0.95" # new for v1
