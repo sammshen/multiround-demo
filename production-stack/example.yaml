@@ -1,0 +1,25 @@
+servingEngineSpec:
+  runtimeClassName: ""
+  modelSpec:
+  - name: "mistral"
+    repository: "vllm/vllm-openai"
+    tag: "latest"
+    modelURL: "mistralai/Mistral-7B-Instruct-v0.2"
+    replicaCount: 2
+    requestCPU: 6
+    requestMemory: "20Gi"
+    requestGPU: 1
+    pvcStorage: "50Gi"
+    vllmConfig:
+      enableChunkedPrefill: false
+      enablePrefixCaching: false
+      maxModelLen: 32768
+      v1: 0
+
+    hf_token: <YOUR_HF_TOKEN>
+
+
+routerSpec:
+  enableRouter: true
+  repository: "lmcache/fault_tolerance_router"
+  tag: "latest"

@@ -1,107 +1,75 @@
-# Fault Tolerance Testing
+# Production Stack Fault Tolerance Demo
 
-This directory contains scripts to test the fault tolerance capabilities of Production Stack and Ray Serve deployments.
+This directory contains a demonstration of the fault tolerance capabilities of Production Stack with vLLM and LMCache when running in Kubernetes.
+
+## What This Demo Shows
+
+When a serving engine pod is killed during a request, the Production Stack router automatically redirects the request to another healthy serving engine, ensuring uninterrupted service. This is a key advantage over traditional LLM serving architectures that don't offer this fault tolerance.
+
+## Files in This Directory
+
+- `k8s_fault_demo.py`: The main Python script that conducts the fault tolerance test by sending requests and killing pods
+- `prod_fault_tolerance_demo.sh`: A wrapper shell script that sets up the environment and calls `k8s_fault_demo.py`
+- `pod_log_monitor.py`: A utility Python script for monitoring pod logs to identify which pod is processing requests
 
 ## Prerequisites
 
-1. Make sure you have both deployments up and running:
-   - Production Stack deployment via Kubernetes
-   - Ray Serve deployment
+1. A running Kubernetes cluster with Production Stack deployed (see `production-stack/helm-deploy.sh`)
+2. `kubectl` configured to access your cluster
+3. Python 3 installed on your system
 
-2. Set your Hugging Face token as an environment variable:
-   ```bash
-   export HF_TOKEN=your_hugging_face_token
-   ```
+## Running the Demo
 
-3. Make sure you have the required Python packages installed:
-   ```bash
-   pip install requests
-   ```
+There are two ways to run the demo:
 
-4. Make the scripts executable:
-   ```bash
-   chmod +x run_fault_tolerance_test.sh run_fault_tolerance_demo.sh setup_port_forwarding.sh
-   ```
+### Option 1: Using the Shell Script (Recommended)
 
-5. **Important:** Set up port forwarding to access the services:
-   ```bash
-   ./setup_port_forwarding.sh
-   ```
-   This will:
-   - Forward port 30080 to the Production Stack router service
-   - Verify that both services are accessible
-
-## Running the Automated Demo (Recommended)
-
-For the most effective test of fault tolerance, use our improved demo script:
+This sets up everything automatically:
 
 ```bash
-./run_fault_tolerance_demo.sh
+chmod +x prod_fault_tolerance_demo.sh
+./prod_fault_tolerance_demo.sh
 ```
 
-This script will:
-1. Send an initial request to identify which pod handles your session
-2. Send a longer request that will be processing for some time
-3. Automatically kill the pod **while the request is being processed**
-4. Test if the system can recover and handle subsequent requests
-
-This approach better demonstrates true fault tolerance because it tests the system's ability to handle a pod failure during active request processing.
-
-## Running the Interactive Test
-
-For a more interactive approach, you can use:
+By default, this uses the chat completions API. For completions API:
 
 ```bash
-./run_fault_tolerance_test.sh
+./prod_fault_tolerance_demo.sh completion
 ```
 
-The script will guide you through:
-1. Choosing which deployment to test (Production Stack or Ray Serve)
-2. Monitoring pods for activity with a specific session ID
-3. Sending an initial request with a session ID
-4. Identifying which serving engine/worker is handling your request
-5. Killing that serving engine/worker
-6. Testing if the system can still handle requests with the same session ID
+The shell script will:
+1. Verify prerequisites (kubectl, router service)
+2. Install required Python packages (`openai`, `requests`, `kubernetes`)
+3. Set up port forwarding if needed
+4. Run the actual fault tolerance demo by calling `k8s_fault_demo.py`
 
-## How It Works
+### Option 2: Running the Python Script Directly
 
-The test script works by:
+If you've already set up port forwarding and installed requirements, you can run:
 
-1. For Production Stack:
-   - Using the session-based routing logic defined in `multi-vllm-lmcache.yaml` (routing via the "x-user-id" header)
-   - Monitoring pods for activity related to your session ID
-   - Identifying which serving engine pod is handling requests for a specific session ID
-   - Killing that pod to see if another pod can take over
-
-2. For Ray Serve:
-   - Sending a request to Ray Serve
-   - Monitoring Ray workers for activity related to your session ID
-   - Identifying which Ray worker is handling the request
-   - Killing that worker to see how Ray Serve handles the failover
-
-## Tools Included
-
-### Fault Tolerance Demo (`fault_tolerance_demo.py`)
-
-Our newest and most recommended tool for testing fault tolerance:
-- Automatically identifies which pod is handling your session
-- Sends a long-running request and kills the pod while the request is in progress
-- Tests the true fault tolerance capabilities of the system under active load
-- Requires minimal user intervention
-
-You can run this tool separately if needed:
 ```bash
-python3 fault_tolerance_demo.py --endpoint "http://localhost:30080/v1/chat/completions" --session-id "9999" --pod-pattern "vllm-deployment-router"
+python3 k8s_fault_demo.py  # For chat API (default)
+python3 k8s_fault_demo.py completion  # For completions API
 ```
 
-### Pod Log Monitor (`pod_log_monitor.py`)
+## How the Demo Works
 
-This tool helps identify which pod is handling requests for a specific session ID by:
-- Monitoring logs from all pods matching a pattern (e.g., "vllm-" for Production Stack)
-- Detecting when logs contain the specified session ID
-- Highlighting activity in real-time
+The `k8s_fault_demo.py` script:
 
-You can run this tool separately if needed:
+1. Determines which model is being used by examining the deployment
+2. Sends a test request with user ID "9999" to identify which pod handles this session
+3. Examines router logs to determine which pod is processing requests for this session
+4. Sends a long-running generation request (a 500-word essay) using the same user ID
+5. After 5 seconds of token generation, kills the serving engine pod that's handling the request
+6. Monitors token generation before and after the pod kill
+7. Reports success if token generation continues after the pod is killed
+
+The key test is whether tokens continue to be generated after the pod is killed. If they do, it demonstrates that the Production Stack router successfully detected the failure and routed the request to another pod.
+
+## Using the Pod Log Monitor
+
+The `pod_log_monitor.py` script is a standalone utility that can help you monitor which pods are handling requests. It's not required for the main demo but can be useful for debugging:
+
 ```bash
 python3 pod_log_monitor.py --pod-pattern "vllm-" --session-id "9999"
 ```
@@ -111,58 +79,36 @@ Options:
 - `--session-id`: Session ID to look for in logs (default: "9999")
 - `--duration`: Duration to monitor in seconds, 0 means indefinitely (default: 0)
 
-### Fault Tolerance Test (`test_fault_tolerance.py`)
-
-This script:
-- Sends requests to the specified endpoint with a session ID
-- Helps identify which pod is handling the request
-- Guides you through killing that pod
-- Tests if the system can still handle requests for the same session ID
-
-You can run this tool separately if needed:
-```bash
-python3 test_fault_tolerance.py --endpoint "http://localhost:30080/v1/chat/completions" --session-id "9999"
-```
-
-### Port Forwarding Setup (`setup_port_forwarding.sh`)
-
-This script:
-- Sets up port forwarding from localhost:30080 to the Kubernetes vllm-router-service
-- Verifies that both Production Stack and Ray Serve endpoints are accessible
-- Runs the port forwarding in the background so tests can access the services
-
 ## Expected Results
 
-- **Production Stack**: Should maintain session state and properly route requests even after a serving engine failure due to its fault-tolerant architecture. The automated demo should show how it handles a failure during active processing.
-- **Ray Serve**: Will show how Ray Serve handles failures in comparison, particularly during active request processing.
+A successful demonstration will show:
+- Tokens being generated before the pod is killed
+- A seamless continuation of token generation after the pod is killed
+- A confirmation message: "✅ FAULT TOLERANCE SUCCESS: Response completed successfully despite pod failure!"
+- Statistics about tokens received before and after the pod was killed
 
 ## Troubleshooting
 
 If you have issues:
 
-1. Make sure both deployments are running:
+1. Make sure your Kubernetes cluster is accessible:
    ```bash
-   kubectl get pods  # For Production Stack
-   ray status       # For Ray Serve
+   kubectl get nodes
    ```
 
-2. Check that port forwarding is active:
+2. Verify that the Production Stack pods are running:
    ```bash
-   lsof -i :30080  # For Production Stack
-   lsof -i :30081  # For Ray Serve
-   ```
-   If not active, run `./setup_port_forwarding.sh` again.
-
-3. Check that your HF_TOKEN is set correctly and has access to the Llama model
-
-4. Check the logs of the pods/workers for any errors:
-   ```bash
-   kubectl logs <pod-name>
+   kubectl get pods | grep vllm
    ```
 
-5. If the pod log monitor isn't detecting activity, try adjusting the pod pattern:
+3. Check port forwarding (automatically set up by the shell script if needed):
    ```bash
-   kubectl get pods  # Look at the actual pod names to determine the right pattern
+   lsof -i :30080
    ```
 
-6. If you're having trouble with the automated demo, try the interactive test instead to manually identify which pod is handling your requests
+4. Look at the router logs for routing information:
+   ```bash
+   kubectl logs $(kubectl get pods | grep router | awk '{print $1}')
+   ```
+
+5. If the script can't identify which pod is handling your session, it will fall back to using the first available pod
